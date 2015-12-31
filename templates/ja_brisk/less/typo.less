@@ -1,0 +1,567 @@
+// --------------------------------------------------
+// TYPOGRAPHY
+// --------------------------------------------------
+
+
+// BODY TEXT
+// ------------------------------------------------------
+
+// Paragraphs
+// ----------
+p {
+  margin: 0 0 @baseLineHeight / 2;
+  small, .small {
+    font-size: @T3smallerFontSize;
+    color: @grayLight;
+  }
+}
+
+.lead {
+  margin-bottom: @baseLineHeight;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: @baseLineHeight * 1.5;
+}
+
+
+// Emphasis & misc
+// ---------------
+
+small {
+  font-size: 85%; // Ex: 14px base font * 85% = about 12px
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+.muted {
+  color: @grayLight;
+}
+
+
+
+// HEADINGS
+// ------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  margin: (@baseLineHeight / 2) 0;
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeight;
+  line-height: 1;
+  color: @headingsColor;
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+  small {
+    font-weight: normal;
+    line-height: 1;
+    color: @grayLight;
+  }
+}
+
+h1 {
+  font-size: @baseFontSize * 2.5;
+  line-height: @baseLineHeight * 2;
+  small {
+    font-size: @baseFontSize * 2;
+  }
+}
+
+h2 {
+  font-size: @baseFontSize * 2; 
+  line-height: @baseLineHeight * 2;
+  small {
+    font-size: @baseFontSize * 1.5;
+  }
+}
+
+h3 {
+  font-size: @baseFontSize * 1.5; 
+  line-height: @baseLineHeight * 2; 
+  small {
+    font-size: @baseFontSize + 2px;
+  }
+}
+
+h4 {
+  font-size: @baseFontSize + 2px; 
+  line-height: @baseLineHeight;
+  small {
+    font-size: @baseFontSize;
+  }
+}
+
+h5 {
+  font-size: @baseFontSize + 1px; 
+  line-height: @baseLineHeight; 
+  small {
+    font-size: @baseFontSize - 2px;
+  }
+}
+
+h6 {
+  font-size: @baseFontSize; 
+  line-height: @baseLineHeight; 
+}
+
+
+
+// TITLES
+// ------------------------------------------------------
+
+// Page header
+// -----------
+.page-header {
+  border-bottom: 1px solid @T3borderColor;
+  padding-bottom: @baseLineHeight;
+  margin: 0 0 (@baseLineHeight * 2);
+}
+
+.page-title,
+.page-header h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+
+// Page Subheader
+// --------------
+.page-subheader {
+  border-bottom: 1px solid @T3borderColor;
+  margin: 0 0 @baseLineHeight;
+  .clearfix();
+}
+
+.page-subtitle,
+.page-subheader h2 {
+  line-height: 1;
+  margin: 0;
+}
+
+.page-header + .page-subheader {
+  margin-top: -@baseLineHeight; //If there is page header, then omit the space before page subheader
+}
+
+
+// Article Header
+// --------------
+.article-header {
+}
+
+.article-title,
+.article-header h1, {
+  font-family: @fontFaceBold;
+  font-weight: normal;
+  margin: 0 0 @baseLineHeight/2 0;
+  line-height: 1;
+}
+
+.article-header h1 a {
+  color: @gray;
+}
+
+.article-header h1 a:hover,
+.article-header h1 a:focus,
+.article-header h1 a:active {
+  color: @linkColorHover;
+  text-decoration: none;
+}
+
+// Smaller "Article Title" in Blog and List layout
+h2.article-title,
+.article-header h2 {
+  font-family: @fontFaceBold;
+  font-weight: normal;
+}
+
+h2.article-title a {
+  color: @gray;
+}
+
+h2.article-title a:hover,
+h2.article-title a:focus,
+h2.article-title a:active {
+  color: @linkColorHover;
+}
+
+
+// Item Header
+// -----------
+.item-title {
+  font-weight: bold;
+}
+
+
+
+// LISTS
+// ------------------------------------------------------
+
+// Unordered and Ordered lists
+// ---------------------------
+ul, ol {
+  padding: 0;
+  margin: 0 0 @baseLineHeight / 2 25px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li {
+  line-height: @baseLineHeight;
+}
+
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+
+// Description Lists
+// -----------------
+dl {
+  margin-bottom: @baseLineHeight;
+}
+
+dt,
+dd {
+  line-height: @baseLineHeight;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: @baseLineHeight / 2;
+}
+
+// Horizontal layout (like forms)
+.dl-horizontal {
+  dt {
+    float: left;
+    width: 120px;
+    clear: left;
+    text-align: right;
+    .text-overflow();
+  }
+  dd {
+    margin-left: 130px;
+  }
+}
+
+
+
+// MISC
+// ------------------------------------------------------
+
+// Horizontal rules
+// ----------------
+hr {
+  margin: @baseLineHeight 0;
+  border: 0;
+  border-top: 1px solid @hrBorder;
+  border-bottom: 1px solid @white;
+}
+
+
+// Abbreviations and acronyms
+// --------------------------
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted @grayLight;
+}
+
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+
+// Blockquotes
+// -----------
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 @baseLineHeight;
+  border-left: 5px solid @grayLighter;
+  p {
+    margin-bottom: 0;
+    #font > .shorthand(14px,300,@baseLineHeight * 1.1);
+  }
+  small {
+    display: block;
+    line-height: @baseLineHeight;
+    color: @grayLight;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+
+  // Float right with text-align: right
+  &.pull-right {
+    float: right;
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid @grayLighter;
+    border-left: 0;
+    p,
+    small {
+      text-align: right;
+    }
+    small {
+      &:before {
+        content: '';
+      }
+      &:after {
+        content: '\00A0 \2014';
+      }
+    }
+  }
+}
+
+
+// Quotes
+// ------
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+// Quotes rounded style
+// ------
+div.t3-module blockquote.rounded {
+  background: @white;
+  border: 1px solid #ddd;
+  .border-radius(5px);
+  .transition(0.5s);
+  margin-bottom: 0;
+  padding: 15px 15px 15px 100px !important;
+
+  span.avatar {
+    display: block;
+    height: 62px;
+    float: left;
+    position: relative;
+    margin-left: -80px;
+    margin-top: 5px;
+    width: 62px;
+  }
+
+  span.avatar span.avt-mask {
+    background: url(../images/avt-mask.png) no-repeat left top;
+    display: block;
+    height: 62px;
+    overflow: hidden;
+    position: relative;
+    width: 62px;
+    z-index: 20px;
+  }
+
+  span.avatar img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+blockquote.rounded:hover {
+  border-color: @baseColor !important;
+  box-shadow: 0px 0px 5px desaturate(@baseColor, 10%);
+}
+
+
+// Addresses
+// ---------
+address {
+  display: block;
+  margin-bottom: @baseLineHeight;
+  font-style: normal;
+  line-height: @baseLineHeight;
+}
+
+// Jumbutron
+// ---------
+div.jumbotron {
+  text-align: center;
+}
+
+div.jumbotron h3 {
+  font-family: 'robotoregular';
+  font-size: ( @baseFontSize + 11 );
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+div.jumbotron p {
+  font-size: @baseFontSize;
+  margin-bottom: 0;
+}
+
+div.jumbotron .btn-large {
+  font-weight: bold;
+  padding: 20px 40px !important;
+}
+
+// Pricing table
+// -------------
+.pricing-table .three-cols,
+.pricing-table .four-cols {
+  .clearfix();
+  padding-bottom: 30px;
+}
+
+.pricing-table .three-cols .col {
+  width: 33.3%;
+}
+
+.pricing-table .four-cols .col {
+  width: 25%;
+}
+
+.pricing-table .col {
+  float: left;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+.pricing-table .featured {
+  z-index: 20;
+} 
+
+.pricing-table .col-first .col-header {
+  .border-top-left-radius(3px);
+}
+
+.pricing-table .col-last .col-header {
+  .border-top-right-radius(3px);
+}
+
+.pricing-table .col-header {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-right: 0;
+  height: 120px;
+  padding: 20px 0;
+  vertical-align: middle;
+}
+
+.pricing-table .featured .col-header {
+  background: #fff;
+  border-right: 1px solid #ddd;
+  margin-top: -20px;
+  margin-right: -1px;
+  height: 140px;
+  .border-top-radius(3px);
+}
+
+.pricing-table .featured-rs .col-header {
+  border-left: 0;
+}
+
+.pricing-table .col-last .col-header {
+  border-right: 1px solid #ddd;
+}
+
+.pricing-table .col-header .price {
+  color: @baseColor;
+  display: block;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.pricing-table .col-header .price sup {
+  font-size: 20px;
+  top: -32px;
+}
+
+.pricing-table .col-header .price small {
+  font-size: 20px;
+}
+
+.pricing-table .col-header strong {
+  color: @gray;
+  font-family: @fontFaceBold;
+  font-size: @T3biggerFontSize;
+  text-transform: uppercase;
+}
+
+.pricing-table ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-table ul li {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 10px 5px;
+}
+
+.pricing-table .col-last ul li {
+  border-right: 1px solid #ddd;
+}
+
+.pricing-table ul li strong {
+  font-size: @T3biggerFontSize;
+}
+
+.pricing-table .col-footer {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 40px 0;
+}
+
+.pricing-table .feature-rs .col-footer {
+  border-left: 0;
+  margin-right: -1px;
+}
+
+.pricing-table .featured .col-footer {
+  border-right: 1px solid #ddd;
+  margin-bottom: -20px;
+  height: 50px;
+  .border-bottom-radius(3px);
+}
+
+.pricing-table .col-last .col-footer {
+  border-right: 1px solid #ddd;
+}
+
+.pricing-table .col-footer .btn {
+  padding: 8px 15px;
+  font-weight: bold;
+  .box-shadow(0);
+}
+
+.pricing-table .featured .col-footer .btn {
+  border: 1px solid darken(@baseColor, 20%);
+  font-weight: bold;
+  margin: 0;
+  vertical-align: middle;
+  .buttonBackground(lighten(@baseColor, 10%), @baseColor, #fff, 1px 1px 0 darken(@baseColor, 10%));
+  .border-radius(3px);
+  .box-shadow(inset -1px 1px 0 lighten(@baseColor, 15%));
+}

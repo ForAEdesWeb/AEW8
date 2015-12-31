@@ -1,0 +1,40 @@
+body {
+  background: #fff;
+  color: #333;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+a {
+  color: #1ba1e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.error {
+  background: url(../images/404-bg.png) no-repeat center top;
+  margin: 100px auto 0;
+  padding-top: 170px;
+  width: 300px;
+}
+
+div.error h1 {
+  font-size: 60px;
+  margin: 20px 0 10px;
+  padding: 0;
+  text-align: center;
+}
+
+div.error .error-message {
+  color: #666;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+div.error #errorboxbody {
+  text-align: center;
+}

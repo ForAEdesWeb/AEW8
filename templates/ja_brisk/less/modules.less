@@ -1,0 +1,232 @@
+/* GENECRIC MODULE STYLE
+--------------------------------------------------------- */
+.t3-module {
+  background: @T3moduleBackground;
+  color: @T3moduleColor;
+  margin-bottom: @baseLineHeight * 2;
+  //Module padding
+  .module-inner {
+    padding: @T3modulePadding;
+  }
+}
+
+/* Module Title ---*/
+.module-title {
+  background: @T3moduleBackground;
+  color: @T3moduleTitleColor;
+  font-family: 'robotobold', sans-serif;
+  font-size: @T3biggerFontSize - 1;
+  font-weight: normal;
+  line-height: 30px;
+  margin: 0 0 (@baseLineHeight / 2) 0;
+  padding: @T3moduleTitlePadding;
+  text-transform: uppercase;
+}
+
+/* Module Content ---*/
+.module-ct {
+}
+
+/* Module List ---*/
+.t3-module ul,
+.t3-module ol {
+  margin-left: 20px;
+}
+
+.t3-module ul.unstyled,
+.t3-module ol.unstyled,
+.t3-module ul.nav,
+.t3-module ol.nav {
+  margin-left: 0;
+}
+
+//
+// JOOMLA! MODULES
+// --------------------------------------------------
+
+// Sidebar module
+// --------------
+.ja-sidebar .t3-module {
+  background: darken(@T3moduleBackground, 3%);
+  margin-bottom: @baseLineHeight;
+  padding: 5px;
+  .border-radius(3px);
+}
+
+.ja-sidebar .t3-module .module-inner {
+  background: @T3moduleBackground;
+  color: @T3moduleColor;
+  border: 1px solid darken(@T3moduleBackground, 10%);
+  padding: @baseLineHeight;
+  .border-radius(3px);
+}
+
+.ja-sidebar .t3-module .module-title {
+  margin-bottom: @baseLineHeight;
+  line-height: 1;
+}
+
+.ja-sidebar .module_menu .module-inner {
+  padding: @baseLineHeight 0 0;
+}
+
+.ja-sidebar .module_menu h3.module-title {
+  padding: 0 20px;
+}
+
+.ja-sidebar .module_menu ul.nav li a {
+  color: @T3moduleLinkColor;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ja-sidebar .module_menu ul.nav li a:hover,
+.ja-sidebar .module_menu ul.nav li a:focus,
+.ja-sidebar .module_menu ul.nav li a:active {
+  color: @T3moduleLinkColorHover;
+}
+
+// Advertisement
+// -------------
+.bannergroup {
+}
+
+.banneritem {
+  padding: @baseLineHeight/2 0;
+  border-top: 1px solid @T3borderColor;
+}
+
+.banneritem:first-child {
+  margin-top: @baseLineHeight/2;
+}
+
+.banneritem a {
+  font-weight: bold;
+}
+
+.bannerfooter {
+  border-top: 1px solid @T3borderColor;
+  font-size: @T3smallerFontSize;
+  padding-top: @baseLineHeight/2;
+  text-align: right;
+}
+
+
+// Categories
+// ----------
+.categories-module, ul.categories-module,
+.category-module, ul.category-module {
+  li {}
+  h4 {
+    font-size: @baseFontSize;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+
+// News Feed
+// ----------
+.feed {
+  // Feed Title
+  h4 {
+    font-weight: bold;
+  }
+  // Feed list
+  .newsfeed,
+  ul.newsfeed {
+    border-top: 1px solid @hrBorder;
+    li {}
+    .feed-link, 
+    h5.feed-link {
+      font-size: @baseFontSize;
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+
+}
+
+
+// Latest Users 
+// ------------
+.latestusers,
+ul.latestusers {
+  margin-left: 0;
+  li {
+    background: @grayLighter;
+    display: inline-block;
+    padding: 5px 10px;
+    .border-radius (@inputBorderRadius);
+  }
+}
+
+
+// Stats 
+// ------------
+.stats-module {
+  dt, dd {
+    display: inline-block;
+    margin: 0;
+  }
+  dt {
+    font-weight: bold;
+    width: 35%;
+  }
+  dd {
+    width: 60%;
+  }
+}
+
+// Popular Tags
+div.tagspopular ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+div.tagspopular ul li {
+  color: @gray;
+  display: inline-block;
+  margin: 0 5px 5px 0;
+}
+
+div.tagspopular ul li a {
+  background: @grayLighter;
+  border-radius: 3px;
+  color: @gray;
+  display: block;
+  padding: 2px 5px;
+}
+
+div.tagspopular ul li a:hover,
+div.tagspopular ul li a:focus,
+div.tagspopular ul li a:active {
+  background: @linkColorHover;
+  color: @white;
+  text-decoration: none;
+}
+
+// Similar tags
+div.tagssimilar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.tagssimilar ul li {
+  border-bottom: 1px solid @grayLighter;
+  padding: 8px 0;
+}
+
+div.tagssimilar ul li a {
+  color: @gray;
+}
+
+div.tagssimilar ul li a:hover,
+div.tagssimilar ul li a:focus,
+div.tagssimilar ul li a:active {
+  color: @linkColorHover;
+}

@@ -1,0 +1,60 @@
+// RTL STYLES
+// ------------------------------------------------------
+
+
+
+/* --- Archives --- */
+div.k2ArchivesBlock {
+  ul li {
+    background-position: right 12px;
+    padding-left: 0;
+    padding-right: 25px;
+  }
+
+  ul li:first-child {
+    background-position: right 2px;
+  }
+}
+
+div.itemAuthorLatest ul li a, 
+div.itemRelated ul li a {
+  background-position: right 5px;
+}
+
+/* --- Comment --- */
+div.itemComments {
+  ul.itemCommentsList li {
+    padding-left: 0;
+    padding-right: (@baseLineHeight*4);
+  }
+  
+  ul.itemCommentsList li .comment-inner span.arrow {
+    background-image: url(../../images/arrow-l_rtl.gif);
+  }
+}
+
+div.k2UsersBlock ul li ul.ubUserItems li {
+  background-position: right 13px;
+  padding-left: 0;
+  padding-right: 17px;
+}
+
+.userItemIntroText img[align=left],
+.tagItemIntroText img[align=left]{
+  margin: 0 15px @T3globalMargin 0;
+}
+
+.userItemIntroText img[align=right],
+.tagItemIntroText img[align=right]{
+  margin: 0 0 @T3globalMargin 15px;
+}
+
+.itemListView .catItemIntroText img[align="right"], 
+.itemIntroText img[align="right"] {
+  margin: 5px 0 (@T3globalMargin / 2) @T3globalMargin;
+}
+
+.itemListView .catItemIntroText img[align="left"], 
+.itemIntroText img[align="left"] {
+  margin: 5px @T3globalMargin (@T3globalMargin / 2) 0;
+}

@@ -1,0 +1,3916 @@
+/**
+ * @version		$Id: k2.css 1492 2012-02-22 17:40:09Z joomlaworks@gmail.com $
+ * @package		K2
+ * @author		JoomlaWorks http://www.joomlaworks.net
+ * @copyright	Copyright (c) 2006 - 2012 JoomlaWorks Ltd. All rights reserved.
+ * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+/*----------------------------------------------------------------------
+	Common Elements
+----------------------------------------------------------------------*/
+/* --- Basic typography --- */
+
+@import "vars.less"; // Modify this for custom colors, font-sizes, etc
+
+/* --- END --- */
+a:active,
+a:focus {
+	outline: 0;
+}
+
+div.componentheading {
+  font-family: @fontFaceBold;
+  font-size: 36px;
+  margin: 0 0 (@baseLineHeight * 2) 0;
+  line-height: 100%;
+}
+
+/*----------------------------------------------------------------------
+	Component: Item view
+----------------------------------------------------------------------*/
+a.itemPrintThisPage {
+	background: #F7FAFE;
+	border: 1px solid #ccc;
+	color: #555;
+	display: block;
+	font-size: 13px;
+	margin: 4px auto 16px;
+	padding: 4px;
+	text-align: center;
+	width: 160px;
+}
+
+a.itemPrintThisPage:hover {
+	background: #eee;
+	text-decoration: none;
+}
+
+a.itemRelTitle {
+}
+
+/* --- Read more --- */
+a.k2ReadMore {
+}
+
+a.k2ReadMore:hover {
+}
+
+a.ubUserFeedIcon span,
+a.ubUserFeedIcon:hover span {
+	display: none;
+}
+
+a.ubUserFeedIcon,
+a.ubUserFeedIcon:hover {
+	background: url(../images/fugue/feed.png) no-repeat 50% 50%;
+	display: inline-block;
+	height: 16px;
+	margin: 0 2px 0 0;
+	padding: 0;
+	width: 16px;
+}
+
+a.ubUserURL span,
+	a.ubUserURL:hover span {
+	display: none;
+}
+
+a.ubUserURL,
+a.ubUserURL:hover {
+	background: url(../images/fugue/globe.png) no-repeat 50% 50%;
+  color: @linkColorHover;
+	display: inline-block;
+	height: 16px;
+	margin: 0 2px 0 0;
+	padding: 0;
+	width: 16px;
+}
+
+body.contentpane #k2Container {
+	padding: 16px; /* used in popups */
+}
+
+div#itemListLeading {
+}
+
+div#itemListLinks {
+	background: #f7fafe;
+	border: 1px solid #ddd;
+	margin: 8px 0;
+	padding: 8px;
+}
+
+div#itemListPrimary {
+}
+
+div#itemListSecondary {
+}
+
+div.catItemAttachmentsBlock {
+	border-bottom: 1px dotted #ccc;
+	padding: 4px;
+}
+
+div.catItemAttachmentsBlock span {
+	color: #555;
+	font-weight: bold;
+	padding: 0 4px 0 0;
+}
+
+div.catItemAttachmentsBlock ul.catItemAttachments {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.catItemAttachmentsBlock ul.catItemAttachments li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0 4px;
+	text-align: center;
+}
+
+div.catItemAttachmentsBlock ul.catItemAttachments li a {
+}
+
+div.catItemAttachmentsBlock ul.catItemAttachments li a:hover {
+}
+
+div.catItemAttachmentsBlock ul.catItemAttachments li span {
+	color: #999;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+div.catItemBody {
+	margin: 0;
+	padding: 0;
+}
+
+div.catItemCategory {
+	border-bottom: 1px solid #eee;
+	padding: (@baseLineHeight / 2 ) 0;
+}
+
+div.catItemCategory a {
+  color: @linkColor;
+}
+
+div.catItemCategory span {
+	color: #555;
+	font-weight: bold;
+	padding: 0 4px 0 0;
+}
+
+/* Anchor link to comments */
+div.catItemCommentsLink {
+	border-right: 1px solid #ccc;
+	display: inline;
+	margin: 0 8px 0 0;
+	padding: 0 8px 0 0;
+}
+
+div.catItemCommentsLink a {
+  color: @linkColor;
+}
+
+div.catItemCommentsLink a:hover {
+  color: @linkColorHover;
+}
+
+div.catItemExtraFields h4, div.genericItemExtraFields h4 {
+	line-height: normal !important;
+	margin: 0;
+	padding: 0 0 8px 0;
+}
+
+div.catItemExtraFields ul li span.catItemExtraFieldsLabel, div.genericItemExtraFields ul li span.genericItemExtraFieldsLabel {
+	display: block;
+	float: left;
+	font-weight: bold;
+	margin: 0 4px 0 0;
+	width: 30%;
+}
+
+div.catItemExtraFields ul li span.catItemExtraFieldsValue {
+}
+
+div.catItemExtraFields ul li, div.genericItemExtraFields ul li {
+	display: block;
+}
+
+div.catItemExtraFields ul, div.genericItemExtraFields ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.catItemExtraFields, div.genericItemExtraFields {
+	border-top: 1px dotted #ddd;
+	margin: 16px 0 0 0;
+	padding: 8px 0 0 0;
+}
+
+
+/* Category item header ---*/
+div.catItemHeader {
+}
+
+div.catItemHeader h3.catItemTitle {
+  font-family: "robotoregular";
+  font-size: (@baseFontSize + 12);
+  font-weight: normal;
+  margin: 0 0 (@baseLineHeight / 4);
+  padding: 0;
+  line-height: (@baseLineHeight * 1.5);
+}
+
+div.catItemHeader h3.catItemTitle a {
+  color: @gray;
+}
+
+div.catItemHeader h3.catItemTitle a:hover,
+div.catItemHeader h3.catItemTitle a:focus,
+div.catItemHeader h3.catItemTitle a:active {
+  color: @linkColorHover;
+  text-decoration: none;
+}
+
+div.catItemHeader h3.catItemTitle span {
+}
+
+div.catItemHeader h3.catItemTitle span sup {
+	color: #CF1919;
+	font-size: 12px;
+	/* superscript */
+	text-decoration: none;
+}
+
+div.catItemHeader span.catItemAuthor {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+div.catItemHeader span.catItemAuthor a {
+  color: @linkColor;
+}
+
+div.catItemHeader span.catItemAuthor a:hover {
+  color: @linkColorHover;
+}
+
+div.catItemHeader span.catItemDateCreated {
+	color: @grayLight;
+  font-family: "robotobold";
+  font-size: (@T3smallFontSize);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Category item meta */
+div.item-meta {
+  color: lighten(@grayLight, 10%);
+  font-size: @T3smallerFontSize;
+  margin-bottom: (@baseLineHeight / 2);
+  overflow: hidden;
+}
+
+div.item-meta span {
+  background: url(../images/sep-grey.gif) no-repeat right center;
+  display: block;
+  float: left;
+  padding: 0 5px;
+}
+
+div.item-meta span:first-child {
+  padding-left: 0;
+}
+
+div.item-meta span:last-child {
+  background: none;
+}
+
+div.item-meta strong {
+  font-size: normal;
+}
+
+div.item-meta a {
+  color: @linkColor !important;
+}
+
+div.item-meta a:hover,
+div.item-meta a:focus,
+div.item-meta a:active {
+  color: @linkColorHover;
+}
+
+div.catItemHitsBlock {
+	border-bottom: 1px dotted #ccc;
+	padding: 4px;
+}
+
+div.catItemImageBlock {
+	margin: 0 0 @baseLineHeight;
+	padding: 0;
+}
+
+div.catItemImageBlock img {
+  border-radius: 3px;
+}
+
+/* Image Gallery */
+div.catItemImageGallery {
+	margin: 0 0 16px 0;
+	padding: 0;
+}
+
+div.catItemIntroText {
+  margin: 0 0 (@baseLineHeight);
+	padding: 0;
+}
+
+div.catItemIntroText img {
+}
+
+div.catItemIsFeatured {
+}
+
+div.catItemLinks {
+	margin: 0;
+	padding: 0;
+}
+
+div.catItemRatingBlock {
+	padding: 8px 0;
+}
+
+div.catItemRatingBlock span {
+	color: #999;
+	display: block;
+	float: left;
+	font-style: normal;
+	margin: 0;
+	padding: 0 4px 0 0;
+}
+
+/* Read more link */
+div.catItemReadMore {
+	display: block;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+div.catItemReadMore a {
+  background: @grayLighter;
+  color: @grayLight;
+  font-size: @T3smallFontSize;
+  float: right;
+  padding: 5px 15px;
+  .border-radius(15px);
+  .transition(0.5s);
+}
+
+div.catItemReadMore a:hover,
+div.catItemReadMore a:focus,
+div.catItemReadMore a:active {
+  background: @linkColorHover;
+  color: @white;
+  text-decoration: none;
+}
+
+div.catItemTagsBlock {
+	padding: 0;
+}
+
+div.catItemTagsBlock span {
+	color: @grayLight;
+  display: block;
+  float: left;
+	font-weight: bold;
+	padding: 0 4px 0 0;
+}
+
+div.catItemTagsBlock span:after {
+  content: ":";
+}
+
+div.catItemTagsBlock ul.catItemTags {
+	display: block;
+  float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.catItemTagsBlock ul.catItemTags li {
+  background: none;
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0 4px 0 0;
+	text-align: center;
+}
+
+div.catItemTagsBlock ul.catItemTags li a {
+  background: @grayLighter;
+  color: @gray;
+  font-size: @T3smallerFontSize;
+  font-weight: bold;
+  padding: 4px 10px;
+  text-shadow: 1px 1px 0 @white;
+  .border-radius(10px);
+  .transition(0.5s);
+}
+
+div.catItemTagsBlock ul.catItemTags li a:hover {
+  background: @linkColorHover;
+  color: @white;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 darken(@linkColorHover, 5%);
+}
+
+/* Video */
+div.catItemVideoBlock {
+	background: #010101 url(../images/system/videoplayer-bg.gif) repeat-x bottom;
+	margin: 0 0 16px 0;
+	padding: 16px;
+}
+
+div.catItemVideoBlock div.catItemVideoEmbedded {
+	text-align: center; /* for embedded videos (not using AllVideos) */
+}
+
+div.catItemVideoBlock span.catItemVideo {
+	display: block;
+}
+
+div.genericItemBody {
+	margin: 0;
+	padding: 8px 0;
+}
+
+div.genericItemCategory {
+	border-right: 1px solid #ccc;
+	display: inline;
+	margin: 0 8px 0 0;
+	padding: 0 8px 0 0;
+}
+
+div.genericItemCategory a {
+  color: @linkColor;
+}
+
+div.genericItemCategory span {
+	color: #555;
+	font-weight: bold;
+	padding: 0 4px 0 0;
+}
+
+div.genericItemExtraFields {
+}
+
+div.genericItemExtraFields h4 {
+}
+
+div.genericItemExtraFields ul {
+}
+
+div.genericItemExtraFields ul li {
+}
+
+div.genericItemExtraFields ul li span.genericItemExtraFieldsLabel {
+}
+
+div.genericItemExtraFields ul li span.genericItemExtraFieldsValue {
+}
+
+div.genericItemHeader {
+}
+
+div.genericItemHeader span.genericItemDateCreated {
+  color: @grayLight;
+  font-family: "robotobold";
+  font-size: (@T3smallFontSize);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+div.genericItemHeader h2.genericItemTitle {
+  font-family: "robotoregular";
+  font-size: (@baseFontSize + 12);
+  font-weight: normal;
+  margin: 0 0 (@baseLineHeight / 4);
+  padding: 0;
+  line-height: (@baseLineHeight * 1.5);
+}
+
+div.genericItemHeader h2.genericItemTitle a {
+  color: @gray;
+}
+
+div.genericItemHeader h2.genericItemTitle a:hover,
+div.genericItemHeader h2.genericItemTitle a:focus,
+div.genericItemHeader h2.genericItemTitle a:active {
+  color: @linkColorHover;
+  text-decoration: none;
+}
+
+div.genericItemImageBlock {
+	margin: 0;
+	padding: 0;
+  overflow: hidden;
+}
+
+div.genericItemIntroText {
+	padding: 0;
+}
+
+div.genericItemIntroText img[align=right] {
+  margin-left: @baseLineHeight;
+  margin-bottom: @baseLineHeight;
+  .border-radius(3px);
+}
+
+div.genericItemList {
+}
+
+/* Read more link */
+div.genericItemReadMore {
+  display: block;
+  overflow: hidden;
+}
+
+div.genericItemReadMore a {
+  background: @grayLighter;
+  color: @grayLight;
+  font-size: @T3smallFontSize;
+  float: right;
+  padding: 5px 15px;
+  .border-radius(15px);
+  .transition(0.5s);
+}
+
+div.genericItemReadMore a:hover,
+div.genericItemReadMore a:focus,
+div.genericItemReadMore a:active {
+  background: @linkColorHover;
+  color: @white;
+  text-decoration: none;
+}
+
+div.genericItemView {
+	border-bottom: 1px solid #eee;
+	margin: 0 0 @baseLineHeight 0;
+	padding-bottom: @baseLineHeight;
+}
+
+/*----------------------------------------------------------------------
+	Component: Itemlist view (generic)
+----------------------------------------------------------------------*/
+div.genericView {
+}
+
+/* Additional class appended to the element above for further styling per group item */
+	div.groupLeading {
+}
+
+div.groupLinks {
+	margin: 0;
+	padding: 0;
+}
+
+div.groupPrimary {
+}
+
+div.groupSecondary {
+}
+
+div.itemAttachmentsBlock {
+	border-bottom: 1px dotted #ccc;
+	padding: 4px;
+}
+
+div.itemAttachmentsBlock span {
+	color: #555;
+	font-weight: bold;
+	padding: 0 4px 0 0;
+}
+
+div.itemAttachmentsBlock ul.itemAttachments {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.itemAttachmentsBlock ul.itemAttachments li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0 4px;
+	text-align: center;
+}
+
+div.itemAttachmentsBlock ul.itemAttachments li a {
+}
+
+div.itemAttachmentsBlock ul.itemAttachments li a:hover {
+}
+
+div.itemAttachmentsBlock ul.itemAttachments li span {
+	color: #999;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+/* Author block */
+div.itemAuthorBlock {  
+	border: 1px solid lighten(@gray, 40%);
+	margin: 0;
+	padding: @baseLineHeight;
+  .border-radius(3px);
+  .box-shadow(0px 0px 5px @grayLighter);
+}
+
+div.itemAuthorBlock div.itemAuthorDetails {
+	margin: 0;
+	padding: 4px 0 0 0;
+}
+
+div.itemAuthorBlock div.itemAuthorDetails h3.itemAuthorName {
+  font-family: "robotobold";
+  font-size: (@baseFontSize + 5);
+  font-weight: normal;
+	margin: 0;
+	padding: 0;
+  line-height: 1;
+}
+
+div.itemAuthorBlock div.itemAuthorDetails h3.itemAuthorName a {
+  color: @gray;
+}
+
+div.itemAuthorBlock div.itemAuthorDetails h3.itemAuthorName a:hover {
+  color: @linkColorHover;
+}
+
+div.itemAuthorBlock div.itemAuthorDetails p {
+}
+
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorEmail {
+	color: #555;
+	font-weight: bold;
+}
+
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorUrl {
+	border-right: 1px solid #ccc;
+	color: #555;
+	font-weight: bold;
+	margin: 0 4px 0 0;
+	padding: 0 8px 0 0;
+}
+
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorUrl a,
+	div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorEmail a {
+	font-weight: normal;
+}
+
+div.itemAuthorBlock div.itemAuthorAvatar {
+  height: 62px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 62px;
+}
+
+div.itemAuthorBlock div.itemAuthorAvatar img {
+  height: 62px;
+	padding: 0;
+  position: absolute;
+  margin: 0;
+  width: 62px;
+  z-index: 10;
+}
+
+div.itemAuthorBlock div.itemAuthorAvatar .mask {
+  background: url(../images/avt-mask.png) no-repeat left top;
+  display: block;
+  height: 62px;
+  position: relative;
+  width: 62px;
+  z-index: 20;
+}
+
+/* Author latest */
+div.itemAuthorLatest,
+div.itemRelated {
+	margin-bottom: 16px;
+	padding: 0;
+}
+
+div.itemAuthorLatest h3,
+div.itemRelated h3 {
+  color: @gray;
+  font-family: "robotoregular";
+  font-size: @T3biggerFontSize;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+div.itemAuthorLatest ul,
+div.itemRelated ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.itemAuthorLatest ul li,
+div.itemRelated ul li {
+  background: @white;
+  border-bottom: 0;
+  padding: (@baseLineHeight / 5) 0;
+}
+
+div.itemAuthorLatest ul li a,
+div.itemRelated ul li a {
+  background: url(../images/bullet-grey.png) no-repeat 10px 5px;
+  color: @gray;
+  padding-left: (@baseLineHeight);
+  text-decoration: none;
+  .transition(0.5s);
+}
+
+div.itemAuthorLatest ul li a:hover,
+div.itemRelated ul li a:hover {
+  background-image: url(../images/bullet-hover.png);
+  color: @linkColorHover;
+}
+
+/* Back to top link */
+div.itemBackToTop {
+	text-align: right;
+}
+
+div.itemBackToTop a {
+  color: @linkColor;
+	text-decoration: underline;
+}
+
+div.itemBackToTop a:hover {
+  color: @linkColorHover;
+	text-decoration: underline;
+}
+
+div.itemBody {
+	margin: 0;
+	padding: 8px 0;
+}
+
+div.itemCategory {
+	border-bottom: 1px solid #eee;
+	padding: (@baseLineHeight / 4) 0;
+}
+
+div.itemCategory a {
+  color: @linkColor;
+}
+
+div.itemCategory span {
+	color: @grayLight;
+	font-weight: bold;
+	padding: 0 5px 0 0;
+}
+
+div.itemCategory span:after {
+  display: block;
+  content: ":";
+}
+
+/* Comments */
+div.itemComments .itemCommentsCounter {
+  border-bottom: 2px solid @grayLighter;
+  margin: 0 0 @baseLineHeight;
+}
+
+div.itemComments {
+}
+
+div.itemComments ul.itemCommentsList {
+	list-style: none;
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+div.itemComments ul.itemCommentsList li {
+  padding: (@baseLineHeight / 2) 0 (@baseLineHeight / 2) (@baseLineHeight * 4);
+  position: relative;
+  overflow: hidden;
+}
+
+div.itemComments ul.itemCommentsList li div.user-avatar {
+  height: 62px;
+  position: absolute;
+  left: 0px;
+  top: (@baseLineHeight/2);
+  width: 62px;
+}
+
+div.itemComments ul.itemCommentsList li div.user-avatar .inner {
+  position: relative;
+}
+
+div.itemComments ul.itemCommentsList li div.user-avatar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 62px;
+}
+
+div.itemComments ul.itemCommentsList li div.user-avatar span.mask {
+  background: url(../images/avt-mask.png) no-repeat 0px 0px;
+  display: block;
+  height: 62px;
+  position: relative;
+  width: 62px;
+  z-index: 20;
+}
+
+div.itemComments ul.itemCommentsList li .comment-inner {
+  border: 1px solid #ddd;
+  padding: @baseLineHeight;
+  position: relative;
+  .border-radius(3px);
+  .box-shadow(0px 0px 5px @grayLighter);
+}
+
+div.itemComments ul.itemCommentsList li .comment-inner span.arrow {
+  background: url(../images/arrow-l_ltr.gif) no-repeat left top;
+  height: 9px;
+  position: absolute;
+  top: 20px;
+  left: -7px;
+  width: 7px;
+}
+
+div.itemComments ul.itemCommentsList li p {
+	padding: 4px 0;
+}
+
+div.itemComments ul.itemCommentsList li span.commentAuthorEmail {
+	display: none;
+}
+
+div.itemComments ul.itemCommentsList li span.commentAuthorName {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.itemComments ul.itemCommentsList li span.commentDate {
+	border-right: 1px solid #ccc;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 8px 0 0;
+	padding: 0 4px 0 0;
+}
+
+div.itemComments ul.itemCommentsList li span.commentLink {
+	float: right;
+	margin-left: 8px;
+}
+
+div.itemComments ul.itemCommentsList li span.commentLink a {
+	font-size: @T3smallerFontSize;
+}
+
+div.itemComments ul.itemCommentsList li span.commentLink a:hover {
+	text-decoration: underline;
+}
+
+div.itemComments ul.itemCommentsList li span.commentToolbar {
+	clear: both;
+	display: block;
+}
+
+div.itemComments ul.itemCommentsList li span.commentToolbar a {
+	font-size: @T3smallerFontSize;
+	margin-right: 4px;
+}
+
+div.itemComments ul.itemCommentsList li span.commentToolbar a:hover {
+	text-decoration: underline;
+}
+
+div.itemComments ul.itemCommentsList li span.commentToolbar a.modal {
+  border: 0px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: auto;
+  left: 0px;
+  width: auto;
+  .border-radius(0px);
+  .box-shadow(0 0 0 0);
+}
+
+div.itemComments ul.itemCommentsList li span.commentToolbarLoading {
+	background: url(../images/system/searchLoader.gif) no-repeat 100% 50%;
+}
+
+div.itemComments ul.itemCommentsList li.authorResponse {
+}
+
+div.itemComments ul.itemCommentsList li.unpublishedComment {
+	background: #ffeaea;
+}
+
+div.itemCommentsForm form {
+}
+
+div.itemCommentsForm form .formLogLoading {
+	background: url(../images/system/loading.gif) no-repeat left center;
+}
+
+div.itemCommentsForm form input#submitCommentButton {
+}
+
+div.itemCommentsForm form input.inputbox {
+	display: block;
+	margin: 0;
+	width: 350px;
+}
+
+div.itemCommentsForm form label.formComment,
+div.itemCommentsForm form label.formEmail,
+div.itemCommentsForm form label.formName,
+div.itemCommentsForm form label.formUrl,
+div.itemCommentsForm form label.formRecaptcha {
+	display: block;
+  font-weight: bold;
+	margin: @baseLineHeight 0 3px;
+}
+
+div.itemCommentsForm form span#formLog {
+	color: #CF1919;
+	font-weight: bold;
+	margin: 0 0 0 20px;
+	padding: 0 0 0 20px;
+}
+
+div.itemCommentsForm .recaptcha_nothad_incorrect_sol {
+  margin-bottom: @baseLineHeight;
+}
+
+div.itemCommentsForm form textarea.inputbox {
+	display: block;
+	height: 160px;
+	margin: 0;
+	width: 350px;
+}
+
+div.itemCommentsForm h3 {
+  font-family: "robotobold";
+  font-weight: bold;
+	margin: 0;
+	padding: 0 0 (@baseLineHeight / 4);
+}
+
+div.itemCommentsForm p.itemCommentsFormNotes {
+	border-top: 2px solid #ccc;
+  font-style: italic;
+  padding: 5px 0;
+}
+
+div.itemCommentsForm .btn {
+  margin-top: 20px;
+}
+
+div.itemCommentsPagination {
+	margin: 0 0 24px 0;
+	padding: 4px;
+}
+
+div.itemCommentsPagination ul.pagination-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+div.itemCommentsPagination ul.pagination-list li {
+  display: inline-block;
+  padding: 0 3px;
+}
+
+div.itemCommentsPagination ul.pagination-list li a {
+  background: @grayLight;
+  color: #fff;
+  display: block;
+  padding: 3px 8px;
+  .border-radius(@inputBorderRadius);
+  .transition(0.5s);
+}
+
+div.itemCommentsPagination ul.pagination-list li a:hover {
+  background: @linkColorHover;
+  text-decoration: none;
+}
+
+div.itemCommentsPagination ul.pagination-list li.disabled a {
+  background: @grayLighter;
+  color: @gray;
+}
+
+div.itemCommentsPagination span.pagination {
+}
+
+div.itemContainer {
+  border-bottom: 1px solid lighten(@grayLight, 30%);
+	float: left;
+  margin: 0 0 (@baseLineHeight * 1.5);
+  padding: 0 0 (@baseLineHeight * 1.5);
+}
+
+div.itemContainerLast {
+}
+
+div.itemContentFooter {
+	border-top: 1px solid #ddd;
+	color: #999;
+	display: block;
+	margin: 16px 0 4px 0;
+	padding: 4px;
+	text-align: right;
+}
+
+div.itemExtraFields {
+	border-top: 1px dotted #ddd;
+	margin: 16px 0 0 0;
+	padding: 8px 0 0 0;
+}
+
+div.itemExtraFields h3 {
+	line-height: normal !important;
+	margin: 0;
+	padding: 0 0 8px 0;
+}
+
+div.itemExtraFields ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.itemExtraFields ul li {
+	display: block;
+}
+
+div.itemExtraFields ul li span.itemExtraFieldsLabel {
+	display: block;
+	float: left;
+	font-weight: bold;
+	margin: 0 4px 0 0;
+	width: 30%;
+}
+
+div.itemExtraFields ul li span.itemExtraFieldsValue {
+}
+
+div.itemFacebookButton {
+	float: left;
+	margin-right: 24px;
+	width: 200px;
+}
+
+div.itemFullText {
+}
+
+div.itemFullText h3 {
+	margin: 0;
+	padding: 16px 0 4px 0;
+}
+
+div.itemFullText img {
+}
+
+div.itemFullText p {
+}
+
+div.itemGooglePlusOneButton {
+}
+
+div.itemHeader {
+}
+
+div.itemHeader h2.itemTitle {
+  font-family: "robotoregular";
+  font-size: (@baseFontSize + 18);
+	margin: 0;
+	padding: 0;
+  line-height: (@baseLineHeight * 2);
+}
+
+div.itemHeader h2.itemTitle span {
+}
+
+div.itemHeader h2.itemTitle span sup {
+	color: #CF1919;
+	font-size: 12px;
+	/* "Featured" presented in superscript */
+	text-decoration: none;
+}
+
+div.itemHeader span.itemAuthor {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+div.itemHeader span.itemAuthor a {
+  color: @linkColor;
+}
+
+div.itemHeader span.itemAuthor a:hover {
+  color: @linkColorHover;
+}
+
+div.itemHeader span.itemDateCreated {
+  color: @grayLight;
+  font-family: "robotobold";
+  font-size: (@T3smallFontSize);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+div.itemImageBlock {
+	margin: 0;
+	padding: 0;
+}
+
+/* Image Gallery */
+div.itemImageGallery {
+	margin: 0 0 16px 0;
+	padding: 0;
+}
+
+div.itemIntroText {
+  font-weight: bold;
+  margin: 0 0 (@baseLineHeight / 2);
+	padding: 0;
+}
+
+div.itemIntroText img {
+}
+
+div.itemIsFeatured {
+}
+
+/* --- Featured flags: the classes are repeated further below to indicate placement in the CSS structure --- */
+div.itemIsFeatured,
+div.catItemIsFeatured,
+div.userItemIsFeatured {
+	background: url(../images/system/featuredItem.png) no-repeat 100% 0;
+}
+
+div.itemLinks {
+	margin: 16px 0;
+	padding: 0;
+}
+
+/* --- Item groups --- */
+div.itemList {
+}
+
+/*----------------------------------------------------------------------
+	Component: Itemlist view (category)
+----------------------------------------------------------------------*/
+div.itemListCategoriesBlock {
+}
+
+/* --- Category block --- */
+div.itemListCategory {
+	background: #f7fafe;
+	border: 1px solid #ddd;
+	margin: 4px 0;
+	padding: 8px;
+}
+
+div.itemListCategory h2 {
+}
+
+div.itemListCategory img {
+	background: #fff;
+	border: 1px solid #ddd;
+	display: block;
+	float: left;
+	margin: 0 8px 0 0;
+	padding: 4px;
+}
+
+div.itemListCategory p {
+}
+
+/* --- Sub-category block --- */
+div.itemListSubCategories {
+}
+
+div.itemListSubCategories h3 {
+}
+
+/* Article navigation */
+div.itemNavigation {
+	margin: 0 0 @baseLineHeight;
+	padding: 0;
+  overflow: hidden;
+}
+
+div.itemNavigation span {
+  color: @gray;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  padding: 3px 5px;
+  .border-radius(3px);
+}
+
+div.itemNavigation a.itemNext {
+  float: right;
+	padding: 0;
+  width: 40%;
+}
+
+div.itemNavigation a.itemPrevious {
+  float: left;
+  padding: 0;
+  width: 40%;
+}
+
+div.itemNavigation span.itemNavigationTitle {
+	color: #999;
+}
+
+div.itemRatingBlock {
+	padding: 8px 0;
+}
+
+div.itemRatingBlock span {
+	color: #999;
+	display: block;
+	float: left;
+	font-style: normal;
+	margin: 0;
+	padding: 0 4px 0 0;
+}
+
+div.itemRatingForm .formLogLoading {
+	background: url(../images/system/loading.gif) no-repeat left center;
+	height: 25px;
+	padding: 0 0 0 20px;
+}
+
+/* Item related */
+div.itemRelated h3 {
+}
+
+div.itemRelated ul {
+  margin-bottom: @baseLineHeight;
+}
+
+div.itemRelated ul li {
+}
+
+div.itemRelated ul li.clr {
+	border: none;
+	clear: both;
+	display: block;
+	float: none;
+	height: 0;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+div.itemRelated ul li.k2ScrollerElement {
+	background: #fff; /* you need to insert this class in the related li element in item.php for this styling to take effect */
+	border: 1px solid #ccc;
+	float: left;
+	margin: 0 4px 4px 0;
+	overflow: hidden;
+	padding: 4px;
+}
+
+div.itemRelAuthor {
+}
+
+div.itemRelAuthor a {
+  color: @linkColor;
+}
+
+div.itemRelAuthor a:hover,
+div.itemRelAuthor a:focus,
+div.itemRelAuthor a:active {
+  color: @linkColorHover;
+}
+
+div.itemRelCat {
+}
+
+div.itemRelCat a {
+}
+
+div.itemRelFulltext {
+}
+
+div.itemRelImageGallery {
+}
+
+div.itemRelIntrotext {
+}
+
+div.itemRelMedia {
+}
+
+div.itemSocialSharing {
+	padding: 8px 0;
+}
+
+div.itemTagsBlock {
+  padding: 0;
+}
+
+div.itemTagsBlock span {
+  color: @grayLight;
+  display: block;
+  float: left;
+  font-weight: bold;
+  padding: 0 4px 0 0;
+}
+
+div.itemTagsBlock span:after {
+  content: ":";
+}
+
+div.itemTagsBlock ul.itemTags {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.itemTagsBlock ul.itemTags li {
+  background: none;
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0 4px 0 0;
+  text-align: center;
+}
+
+div.itemTagsBlock ul.itemTags li a {
+  background: @grayLighter;
+  color: @gray;
+  font-size: @T3smallerFontSize;
+  font-weight: bold;
+  padding: 4px 10px;
+  text-shadow: 1px 1px 0 @white;
+  .border-radius(10px);
+  .transition(0.5s);
+}
+
+div.itemTagsBlock ul.itemTags li a:hover {
+  background: @linkColorHover;
+  color: @white;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 darken(@linkColorHover, 5%);
+}
+
+div.itemToolbar {
+	background: lighten(@grayLighter, 10%);
+	border: 1px solid #ddd;
+	margin: 0 0 (@baseLineHeight / 2);
+	padding: (@baseLineHeight / 4);
+  .border-radius(3px);
+  .box-shadow(0 0 5px @grayLighter);
+}
+
+div.itemToolbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+div.itemToolbar ul > li:first-child {
+	border: none; /* remove the first CSS border from the left of the toolbar */
+}
+
+div.itemToolbar ul li {
+	background: none;
+	border-left: 1px solid #ccc;
+	display: inline;
+	font-size: 12px;
+	list-style: none;
+	margin: 0;
+	padding: 0 4px 0 8px;
+	text-align: center;
+}
+
+div.itemToolbar ul li a {
+  color: @gray;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+div.itemToolbar ul li a:hover,
+div.itemToolbar ul li a:focus,
+div.itemToolbar ul li a:active {
+  color: @linkColorHover;
+}
+
+div.itemToolbar ul li a img {
+	vertical-align: middle;
+}
+
+div.itemToolbar ul li a span {
+}
+
+div.itemToolbar ul li a#fontDecrease {
+	margin: 0 0 0 2px;
+}
+
+div.itemToolbar ul li a#fontDecrease img {
+	background: url(../images/system/font_decrease.gif) no-repeat;
+	height: 13px;
+	width: 13px;
+}
+
+div.itemToolbar ul li a#fontDecrease span,
+	div.itemToolbar ul li a#fontIncrease span {
+	display: none;
+}
+
+div.itemToolbar ul li a#fontIncrease {
+	margin: 0 0 0 2px;
+}
+
+div.itemToolbar ul li a#fontIncrease img {
+	background: url(../images/system/font_increase.gif) no-repeat;
+	height: 13px;
+	width: 13px;
+}
+
+div.itemToolbar ul li a#fontIncrease:hover,
+div.itemToolbar ul li a#fontDecrease:hover {
+  text-decoration: none;
+} 
+
+div.itemToolbar ul li a.itemCommentsLink {
+}
+
+div.itemToolbar ul li a.itemCommentsLink span {
+}
+
+div.itemToolbar ul li a.itemEmailLink {
+}
+
+div.itemToolbar ul li a.itemEmailLink span {
+}
+
+div.itemToolbar ul li a.itemImageGalleryLink {
+}
+
+div.itemToolbar ul li a.itemImageGalleryLink span {
+}
+
+div.itemToolbar ul li a.itemPrintLink {
+}
+
+div.itemToolbar ul li a.itemPrintLink span {
+}
+
+div.itemToolbar ul li a.itemVideoLink {
+}
+
+div.itemToolbar ul li a.itemVideoLink span {
+}
+
+div.itemToolbar ul li a:hover {
+}
+
+div.itemToolbar ul li span.itemTextResizerTitle {
+}
+
+div.itemTwitterButton {
+	float: left;
+	margin: 2px 24px 0 0;
+}
+
+/* Video */
+div.itemVideoBlock {
+	background: #010101 url(../images/system/videoplayer-bg.gif) repeat-x bottom;
+	margin: 0 0 16px 0;
+	padding: 16px;
+}
+
+div.itemVideoBlock div.itemVideoEmbedded {
+	text-align: center; /* for embedded videos (not using AllVideos) */
+}
+
+div.itemVideoBlock span.itemVideo {
+	display: block;
+	overflow: hidden;
+}
+
+div.itemVideoBlock span.itemVideoCaption {
+	color: #eee;
+	display: block;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	width: 60%;
+}
+
+div.itemVideoBlock span.itemVideoCredits {
+	color: #eee;
+	display: block;
+	float: right;
+	font-size: 11px;
+	font-style: italic;
+	text-align: right;
+	width: 35%;
+}
+
+div.itemView {
+	border-bottom: 1px dotted #ccc; /* this is the item container for this view */
+	margin: 0 0 24px 0;
+	padding: 8px 0 24px 0;
+}
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_tools
+----------------------------------------------------------------------*/
+/* --- Archives --- */
+div.k2ArchivesBlock {
+}
+
+div.k2ArchivesBlock ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.k2ArchivesBlock ul li:first-child {
+  background-position: 0px 2px;
+  padding-top: 0;
+}
+
+div.k2ArchivesBlock ul li {
+  background: url(../images/icon-calendar.png) no-repeat 0px 12px;
+  border-bottom: 1px solid darken(@T3moduleBackground, 10%);
+  padding: (@baseLineHeight / 2) 0 (@baseLineHeight / 2) 25px;
+}
+
+div.k2ArchivesBlock ul li a {
+  color: @gray;
+  .transition(0.5s);
+}
+
+div.k2ArchivesBlock ul li a:hover {
+  color: @linkColorHover;
+  text-decoration: none;
+}
+
+/* --- Authors --- */
+div.k2AuthorsListBlock {
+}
+
+div.k2AuthorsListBlock ul {
+}
+
+div.k2AuthorsListBlock ul li {
+}
+
+div.k2AuthorsListBlock ul li a.abAuthorAvatar img {
+}
+
+div.k2AuthorsListBlock ul li a.abAuthorLatestItem {
+	clear: both;
+	display: block;
+}
+
+div.k2AuthorsListBlock ul li a.abAuthorLatestItem:hover {
+}
+
+div.k2AuthorsListBlock ul li a.abAuthorName {
+}
+
+div.k2AuthorsListBlock ul li a.abAuthorName:hover {
+}
+
+div.k2AuthorsListBlock ul li span.abAuthorCommentsCount {
+}
+
+/* --- Breadcrumbs --- */
+div.k2BreadcrumbsBlock {
+}
+
+div.k2BreadcrumbsBlock a {
+  color: @linkColor;
+}
+
+div.k2BreadcrumbsBlock a:hover {
+  color: @linkColorHover;
+}
+
+div.k2BreadcrumbsBlock span.bcSeparator {
+	font-size: 14px;
+	padding: 0 4px;
+}
+
+div.k2BreadcrumbsBlock span.bcTitle {
+	color: #999;
+	padding: 0 4px 0 0;
+}
+
+div.k2CalendarLoader {
+	background: #fff url(../images/system/k2CalendarLoader.gif) no-repeat 50% 50%;
+}
+
+/* --- Category List/Menu --- */
+div.k2CategoriesListBlock {
+}
+
+div.k2CategoriesListBlock ul {
+}
+
+div.k2CategoriesListBlock ul li {
+}
+
+div.k2CategoriesListBlock ul li a {
+  color: @linkColor;
+}
+
+div.k2CategoriesListBlock ul li a span.catCounter {
+}
+
+div.k2CategoriesListBlock ul li a span.catTitle {
+	padding-right: 4px;
+}
+
+div.k2CategoriesListBlock ul li a:hover {
+  color: @linkColorHover;
+}
+
+div.k2CategoriesListBlock ul li a:hover span.catCounter {
+}
+
+div.k2CategoriesListBlock ul li a:hover span.catTitle {
+}
+
+div.k2CategoriesListBlock ul li.activeCategory {
+}
+
+div.k2CategoriesListBlock ul li.activeCategory a {
+	font-weight: bold;
+}
+
+/* --- Category Tree Select Box --- */
+div.k2CategorySelectBlock {
+}
+
+div.k2CategorySelectBlock form select {
+	width: auto;
+}
+
+div.k2CategorySelectBlock form select option {
+}
+
+/* --- Custom Code --- */
+div.k2CustomCodeBlock {
+}
+
+/* --- RSS feed icon --- */
+div.k2FeedIcon {
+	padding: 4px 8px;
+}
+
+div.k2FeedIcon a span,
+div.k2FeedIcon a:hover span {
+	display: none;
+}
+
+div.k2FeedIcon a,
+div.k2FeedIcon a:hover {
+	background: url(../images/fugue/feed.png) no-repeat 50% 50%;
+	display: block;
+	float: right;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+	width: 16px;
+}
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_content
+----------------------------------------------------------------------*/
+div.k2ItemsBlock {
+}
+
+div.k2ItemsBlock a.moduleCustomLink {
+}
+
+div.k2ItemsBlock a.moduleCustomLink:hover {
+}
+
+div.k2ItemsBlock p.modulePretext {
+}
+
+div.k2ItemsBlock ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.k2ItemsBlock ul li {
+  background: none;
+  border-bottom: 1px solid @grayLighter;
+  padding: (@baseLineHeight / 2) 0;
+}
+
+div.k2ItemsBlock ul li:first-child {
+  padding-top: 0;
+}
+
+div.k2ItemsBlock ul li.lastItem {
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+div.k2ItemsBlock ul li a {
+  color: @gray;
+}
+
+div.k2ItemsBlock ul li a:hover,
+div.k2ItemsBlock ul li a:focus,
+div.k2ItemsBlock ul li a:active {
+  color: @linkColorHover;
+}
+
+div.k2ItemsBlock .item-meta {
+  margin-bottom: (@baseLineHeight / 4);
+}
+
+div.k2ItemsBlock ul li a.moduleItemAuthorAvatar img {
+  border: 0;
+  margin-right: 10px;
+}
+
+div.k2ItemsBlock ul li a.moduleItemCategory {
+}
+
+div.k2ItemsBlock ul li a.moduleItemComments {
+	border-right: 1px solid #ccc;
+	margin: 0 8px 0 0;
+	padding: 0 4px 0 0;
+}
+
+div.k2ItemsBlock ul li a.moduleItemComments:hover {
+  color: @linkColorHover;
+}
+
+div.k2ItemsBlock ul li a.moduleItemReadMore {
+}
+
+div.k2ItemsBlock ul li a.moduleItemReadMore:hover {
+}
+
+div.k2ItemsBlock ul li a.moduleItemTitle {
+  font-weight: bold;
+}
+
+div.k2ItemsBlock ul li a.moduleItemTitle:hover {
+  color: @linkColorHover;
+}
+
+div.k2ItemsBlock ul li a:hover {
+  color: @linkColorHover;
+}
+
+div.k2ItemsBlock ul li div.moduleAttachments {
+}
+
+div.k2ItemsBlock ul li div.moduleItemAuthor {
+}
+
+div.k2ItemsBlock ul li div.moduleItemAuthor a {
+}
+
+div.k2ItemsBlock ul li div.moduleItemAuthor a:hover {
+  color: @linkColorHover;
+}
+
+div.k2ItemsBlock ul li div.moduleItemExtraFields {
+}
+
+div.k2ItemsBlock ul li div.moduleItemIntrotext {
+	display: block;
+	padding: 0;
+}
+
+div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {
+	border: 2px solid #ddd;
+	float: right;
+	margin: 2px 0 4px 4px;
+	padding: 0;
+}
+
+div.k2ItemsBlock ul li div.moduleItemTags {
+}
+
+div.k2ItemsBlock ul li div.moduleItemTags a {
+	padding: 0 2px;
+}
+
+div.k2ItemsBlock ul li div.moduleItemTags a:hover {
+  color: @linkColorHover;
+}
+
+div.k2ItemsBlock ul li div.moduleItemTags b {
+}
+
+div.k2ItemsBlock ul li div.moduleItemVideo {
+}
+
+div.k2ItemsBlock ul li div.moduleItemVideo span.moduleItemVideoCaption {
+}
+
+div.k2ItemsBlock ul li div.moduleItemVideo span.moduleItemVideoCredits {
+}
+
+div.k2ItemsBlock ul li span.moduleItemDateCreated {
+}
+
+div.k2ItemsBlock ul li span.moduleItemHits {
+	border-right: 1px solid #ccc;
+	margin: 0 8px 0 0;
+	padding: 0 4px 0 0;
+}
+
+div.k2ItemsBlock ul li.lastItem {
+}
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_comments
+----------------------------------------------------------------------*/
+/* Latest Comments */
+div.k2LatestCommentsBlock {
+}
+
+div.k2LatestCommentsBlock ul {
+  display: block;
+  margin: 0;
+  list-style: none;
+}
+
+div.k2LatestCommentsBlock ul li {
+  background: none;
+  border-bottom: 1px solid darken(@T3moduleBackground, 10%);
+  margin: 0;
+  padding: (@baseLineHeight / 2) 0;
+}
+
+div.k2LatestCommentsBlock ul li:first-child {
+  padding-top: 0;
+}
+
+div.k2LatestCommentsBlock ul li.lastItem {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+div.k2LatestCommentsBlock ul li.user-comment {
+  position: relative;
+}
+
+div.k2LatestCommentsBlock ul li a {
+  color: @gray;
+}
+
+div.k2LatestCommentsBlock ul li a.lcComment {
+  display: block;
+}
+
+div.k2LatestCommentsBlock ul li a.lcAvatar img {
+  border: 0;
+  height: 62px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 62px;
+}
+
+div.k2LatestCommentsBlock ul li:first-child a.lcAvatar img {
+  top: 2px;
+}
+
+div.k2LatestCommentsBlock ul li a:hover {
+  color: @baseColor;
+}
+
+div.k2LatestCommentsBlock ul li span.lcComment {
+}
+
+div.k2LatestCommentsBlock ul li span.lcCommentDate {
+	color: @grayLight;
+  font-size: @T3smallerFontSize;
+}
+
+div.k2LatestCommentsBlock ul li span.lcItemCategory {
+  color: @grayLight;
+  font-size: @T3smallerFontSize;
+}
+
+div.k2LatestCommentsBlock ul li span.lcItemTitle {
+}
+
+div.k2LatestCommentsBlock ul li span.lcUsername {
+  color: @grayLight;
+  font-size: @T3smallerFontSize;
+}
+
+div.k2LatestCommentsBlock ul li,
+div.k2TopCommentersBlock ul li,
+div.k2ItemsBlock ul li,
+div.k2LoginBlock ul li,
+div.k2UserBlock ul.k2UserBlockActions li,
+div.k2UserBlock ul.k2UserBlockRenderedMenu li,
+div.k2ArchivesBlock ul li,
+div.k2AuthorsListBlock ul li,
+div.k2CategoriesListBlock ul li,
+div.k2UsersBlock ul li {
+}
+
+div.k2LatestCommentsBlock ul li.lastItem {
+}
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_user (mod_k2_login will be removed in v2.6)
+----------------------------------------------------------------------*/
+div.k2LoginBlock {
+}
+
+div.k2LoginBlock fieldset.input {
+	margin: 0;
+	padding: 0 0 8px 0;
+}
+
+div.k2LoginBlock fieldset.input input.button {
+}
+
+div.k2LoginBlock fieldset.input p {
+	margin: 0;
+	padding: 0 0 4px 0;
+}
+
+div.k2LoginBlock fieldset.input p input {
+	display: block;
+  width: 90%;
+}
+
+div.k2LoginBlock fieldset.input p label {
+	display: block;
+}
+
+div.k2LoginBlock fieldset.input p#form-login-remember {
+  margin-bottom: 10px;
+	
+	label,
+	input {
+		display: inline;
+		vertical-align: top;
+	}
+	
+	label {
+		margin-bottom: 0;
+	}
+	
+	input {
+		margin-top: 4px;
+	}
+}
+
+div.k2LoginBlock fieldset.input p #modlgn_remember {
+  vertical-align: middle;
+  margin-top: 0;
+  width: auto;
+}
+
+
+div.k2LoginBlock p.postText {
+}
+
+div.k2LoginBlock p.preText {
+}
+
+div.k2LoginBlock ul {
+}
+
+div.k2LoginBlock ul li {
+}
+
+/* --- Pagination --- */
+div.k2Pagination {
+	color: #999;
+	margin: 24px 0 4px 0;
+	padding: 8px;
+	text-align: center;
+}
+
+/* --- Pagination (additional styling for Joomla! 1.6+) --- */
+div.k2Pagination ul {
+	text-align: center;
+	
+	li {
+		background: none;
+		display: inline-block;
+		margin-bottom: 10px;
+		padding: 0 5px;
+		
+		a {
+			background: @gray;
+			color: @white;
+			display: block;
+			padding: 5px 10px;
+			text-shadow: 1px 1px 0 darken(@gray, 10%);
+			.border-radius(2px);
+			.transition(0.5s);
+			
+			&:hover, &:active, &:focus {
+				background: @linkColorHover;
+				color: @white;
+				text-decoration: none;
+				text-shadow: 1px 1px 0 darken(@linkColorHover, 5%);
+			}
+		}
+	}
+
+	li.disabled a {
+		background: @grayLighter;
+		color: lighten(@gray, 20%);
+		text-shadow: 1px 1px 0 @white;
+	}
+
+	li.active a {
+		background: @linkColorHover;
+		color: @white;
+		text-decoration: none;
+		text-shadow: 1px 1px 0 darken(@linkColorHover, 5%);
+	}
+}
+
+
+/* "Report comment" form */
+div.k2ReportCommentFormContainer {
+	margin: 0 auto;
+	padding: 8px;
+	width: 480px;
+}
+
+div.k2ReportCommentFormContainer blockquote {
+	background: #f7fafe;
+	border: 1px solid #ddd;
+	margin: 0 0 8px 0;
+	padding: 8px;
+	width: 462px;
+}
+
+div.k2ReportCommentFormContainer blockquote span.quoteIconLeft {
+	color: #135CAE;
+	display: block;
+	float: left;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 30px;
+	vertical-align: top;
+}
+
+div.k2ReportCommentFormContainer blockquote span.quoteIconRight {
+	color: #135CAE;
+	display: block;
+	float: right;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 30px;
+	vertical-align: top;
+}
+
+div.k2ReportCommentFormContainer blockquote span.theComment {
+	color: #000;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+	padding: 0 4px;
+}
+
+div.k2ReportCommentFormContainer form #recaptcha {
+	margin-bottom: 24px;
+}
+
+div.k2ReportCommentFormContainer form .formLogLoading {
+	background: url(../images/system/loading.gif) no-repeat left center;
+}
+
+div.k2ReportCommentFormContainer form input,
+	div.k2ReportCommentFormContainer form textarea {
+	border: 1px solid #ddd;
+	display: block;
+	font-size: 12px;
+	margin: 0 0 8px 0;
+	padding: 2px;
+	width: 474px;
+}
+
+div.k2ReportCommentFormContainer form label {
+	display: block;
+	font-weight: bold;
+}
+
+div.k2ReportCommentFormContainer form span#formLog {
+	color: #CF1919;
+	font-weight: bold;
+	margin: 0 0 0 20px;
+	padding: 0 0 0 20px;
+}
+
+/* n level (n) - like the above... */
+/* --- Search Box --- */
+div.k2SearchBlock {
+	position: relative;
+}
+
+div.k2SearchBlock div.k2LiveSearchResults {
+	background: #fff;
+	border: 1px solid #ccc;
+	display: none;
+	margin-top: -1px;
+	position: absolute;
+	z-index: 99;
+}
+
+/* Live search results (fetched via ajax) */
+	div.k2SearchBlock div.k2LiveSearchResults ul.liveSearchResults {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.k2SearchBlock div.k2LiveSearchResults ul.liveSearchResults li {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.k2SearchBlock div.k2LiveSearchResults ul.liveSearchResults li a {
+	border-top: 1px dotted #eee;
+  color: @linkColor;
+	display: block;
+	padding: 1px 2px;
+}
+
+div.k2SearchBlock div.k2LiveSearchResults ul.liveSearchResults li a:hover {
+	color: @linkColorHover;
+}
+
+div.k2SearchBlock form {
+}
+
+div.k2SearchBlock form input.button {
+}
+
+div.k2SearchBlock form input.inputbox {
+}
+
+div.k2SearchBlock form input.k2SearchLoading {
+	background: url(../images/system/searchLoader.gif) no-repeat 100% 50%;
+}
+
+/* --- Tag Cloud --- */
+div.k2TagCloudBlock {
+	padding: 8px 0;
+}
+
+div.k2TagCloudBlock a {
+  color: @gray;
+	display: block;
+	float: left;
+  padding: (@baseLineHeight / 2) 5px;
+}
+
+div.k2TagCloudBlock a:hover {
+	color: @linkColorHover;
+}
+
+/* Top Commenters */
+div.k2TopCommentersBlock {
+}
+
+div.k2TopCommentersBlock ul {
+}
+
+div.k2TopCommentersBlock ul li {
+}
+
+div.k2TopCommentersBlock ul li a.tcAvatar img {
+}
+
+div.k2TopCommentersBlock ul li a.tcLatestComment {
+  color: @linkColor;
+}
+
+div.k2TopCommentersBlock ul li a.tcLatestComment:hover {
+  color: @linkColorHover;
+}
+
+div.k2TopCommentersBlock ul li a.tcLink {
+}
+
+div.k2TopCommentersBlock ul li a.tcLink:hover {
+  color: @linkColor;
+}
+
+div.k2TopCommentersBlock ul li span.tcCommentsCounter {
+}
+
+div.k2TopCommentersBlock ul li span.tcLatestCommentDate {
+	color: #999;
+}
+
+div.k2TopCommentersBlock ul li span.tcUsername {
+}
+
+div.k2TopCommentersBlock ul li.lastItem {
+}
+
+div.k2UserBlock {
+}
+
+div.k2UserBlock div.k2UserBlockDetails {
+	margin-bottom: 20px;
+}
+
+div.k2UserBlock div.k2UserBlockDetails a.ubAvatar img {
+}
+
+div.k2UserBlock div.k2UserBlockDetails span.ubCommentsCount {
+}
+
+div.k2UserBlock div.k2UserBlockDetails span.ubName {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.k2UserBlock form {
+}
+
+div.k2UserBlock form input.ubLogout {
+}
+
+div.k2UserBlock p.ubGreeting {
+	border-bottom: 1px dotted #ccc;
+}
+
+div.k2UserBlock ul.k2UserBlockActions {
+}
+
+div.k2UserBlock ul.k2UserBlockActions li {
+}
+
+div.k2UserBlock ul.k2UserBlockActions li a {
+}
+
+div.k2UserBlock ul.k2UserBlockActions li a:hover {
+  color: @linkColorHover;
+}
+
+div.k2UserBlock ul.k2UserBlockRenderedMenu {
+}
+
+div.k2UserBlock ul.k2UserBlockRenderedMenu li {
+}
+
+div.k2UserBlock ul.k2UserBlockRenderedMenu li a {
+}
+
+div.k2UserBlock ul.k2UserBlockRenderedMenu li a:hover {
+  color: @linkColorHover;
+}
+
+div.k2UserBlock ul.k2UserBlockRenderedMenu li ul {
+}
+
+div.k2UserBlock ul.k2UserBlockRenderedMenu li ul li {
+}
+
+div.k2UserBlock ul.k2UserBlockRenderedMenu li ul li a {
+}
+
+div.k2UserBlock ul.k2UserBlockRenderedMenu li ul ul {
+}
+
+div.k2UserBlock ul.k2UserBlockRenderedMenu li ul ul li {
+}
+
+div.k2UserBlock ul.k2UserBlockRenderedMenu li ul ul li a {
+}
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_users
+----------------------------------------------------------------------*/
+div.k2UsersBlock {
+}
+
+div.k2UsersBlock ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.k2UsersBlock ul li {
+  border-bottom: 1px solid lighten(@grayLight, 25%);
+  padding: @baseLineHeight 0;
+}
+
+div.k2UsersBlock ul li:first-child {
+  padding-top: 0;
+}
+
+div.k2UsersBlock ul li.lastItem {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+div.k2UsersBlock ul li a.ubUserAvatar img {
+  margin-right: (@baseLineHeight / 2);
+}
+
+div.k2UsersBlock ul li a.ubUserName {
+  color: @gray;
+  font-family: "robotobold", sans-serif;
+  font-size: @T3bigFontSize;
+  font-weight: normal;
+}
+
+div.k2UsersBlock ul li a.ubUserName:hover {
+  color: @linkColorHover;
+}
+
+div.k2UsersBlock ul li div.ubUserAdditionalInfo {
+  margin-bottom: (@baseLineHeight / 2);
+}
+
+div.k2UsersBlock ul li div.ubUserDescription p {
+  margin-bottom: 0;
+}
+
+div.k2UsersBlock ul li h3 {
+	clear: both;
+  font-family: "robotobold", sans-searif;
+  font-size: @baseFontSize;
+  font-weight: normal;
+	margin: 0 0 (@baseLineHeight / 4);
+	padding: 0;
+  line-height: 1;
+}
+
+div.k2UsersBlock ul li ul.ubUserItems {
+}
+
+div.k2UsersBlock ul li ul.ubUserItems li {
+  background: url(../images/bullet-grey.png) no-repeat 5px 13px;
+  border-bottom: 0;
+  padding: (@baseLineHeight / 4) 0 (@baseLineHeight / 4)  17px;
+}
+
+div.k2UsersBlock ul li ul.ubUserItems li a {
+  color: @gray;
+}
+
+div.k2UsersBlock ul li ul.ubUserItems li a:hover,
+div.k2UsersBlock ul li ul.ubUserItems li a:focus,
+div.k2UsersBlock ul li ul.ubUserItems li a:active {
+  color: @linkColorHover;
+}
+
+div.k2UsersBlock ul li.lastItem {
+}
+
+div.latestItemBody {
+	margin: 0;
+	padding: 8px 0;
+}
+
+div.latestItemCategory {
+	border-bottom: 1px dotted #ccc;
+	padding: 4px;
+}
+
+div.latestItemCategory a {
+}
+
+div.latestItemCategory span {
+	color: #555;
+	font-weight: bold;
+	padding: 0 4px 0 0;
+}
+
+/* Anchor link to comments */
+div.latestItemCommentsLink {
+	border-right: 1px solid #ccc;
+	display: inline;
+	margin: 0 8px 0 0;
+	padding: 0 8px 0 0;
+}
+
+div.latestItemCommentsLink a {
+}
+
+div.latestItemCommentsLink a:hover {
+  color: @linkColorHover;
+}
+
+div.latestItemHeader {
+}
+
+div.latestItemHeader h3.latestItemTitle {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 110%;
+	margin: 0;
+	padding: 10px 0 4px 0;
+}
+
+div.latestItemImageBlock {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+div.latestItemIntroText {
+	font-size: inherit;
+	font-weight: normal;
+	line-height: inherit;
+	padding: 4px 0 12px 0;
+}
+
+div.latestItemIntroText img {
+}
+
+div.latestItemLinks {
+	margin: 0 0 16px 0;
+	padding: 0;
+}
+
+/* Latest items list */
+div.latestItemList {
+	padding: 0 8px 8px 0;
+}
+
+/* Read more link */
+div.latestItemReadMore {
+	display: inline;
+}
+
+div.latestItemReadMore a {
+}
+
+div.latestItemReadMore a:hover {
+  color: @linkColorHover;
+}
+
+/* Category info block */
+div.latestItemsCategory {
+	background: #f7fafe;
+	border: 1px solid #ddd;
+	margin: 0 8px 8px 0;
+	padding: 8px;
+}
+
+div.latestItemsCategory h2 {
+}
+
+div.latestItemsCategory p {
+}
+
+div.latestItemsCategoryImage {
+	text-align: center;
+}
+
+div.latestItemsCategoryImage img {
+	background: #fff;
+	border: 1px solid #ddd;
+	margin: 0 8px 0 0;
+	padding: 4px;
+}
+
+/*----------------------------------------------------------------------
+	Component: Latest view
+----------------------------------------------------------------------*/
+div.latestItemsContainer {
+	float: left;
+}
+
+/* User info block */
+div.latestItemsUser {
+	background: #f7fafe;
+	border: 1px solid #ddd;
+	clear: both;
+	margin: 0 8px 8px 0;
+	padding: 8px;
+}
+
+div.latestItemsUser h2 {
+}
+
+div.latestItemsUser img {
+	background: #fff;
+	border: 1px solid #ddd;
+	display: block;
+	float: left;
+	margin: 0 8px 0 0;
+	padding: 4px;
+}
+
+div.latestItemsUser p.latestItemsUserAdditionalInfo {
+	margin: 8px 0 0 0;
+	padding: 4px 0;
+}
+
+div.latestItemsUser p.latestItemsUserDescription {
+	padding: 4px 0;
+}
+
+div.latestItemTagsBlock {
+	border-bottom: 1px dotted #ccc;
+	padding: 4px;
+}
+
+div.latestItemTagsBlock span {
+	color: #555;
+	font-weight: bold;
+	padding: 0 4px 0 0;
+}
+
+div.latestItemTagsBlock ul.latestItemTags {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.latestItemTagsBlock ul.latestItemTags li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0 4px 0 0;
+	text-align: center;
+}
+
+div.latestItemTagsBlock ul.latestItemTags li a {
+}
+
+div.latestItemTagsBlock ul.latestItemTags li a:hover {
+}
+
+/* Video */
+div.latestItemVideoBlock {
+	background: #010101 url(../images/system/videoplayer-bg.gif) repeat-x bottom;
+	margin: 0 0 16px 0;
+	padding: 16px;
+}
+
+div.latestItemVideoBlock span.latestItemVideo {
+	display: block;
+}
+
+div.latestItemView {
+}
+
+div.moduleItemExtraFields ul {
+}
+
+div.moduleItemExtraFields ul li {
+}
+
+div.moduleItemExtraFields ul li span.moduleItemExtraFieldsLabel {
+	display: block;
+	float: left;
+	font-weight: bold;
+	margin: 0 4px 0 0;
+	width: 30%;
+}
+
+div.moduleItemExtraFields ul li span.moduleItemExtraFieldsValue {
+}
+
+div.subCategory {
+	margin: 0 0 (@baseLineHeight * 2);
+	padding: 0;
+}
+
+div.subCategory a.subCategoryImage img,
+div.subCategory a.subCategoryImage:hover img {
+	margin: 0 0 (@baseLineHeight / 2 );
+	padding: 0;
+}
+
+div.subCategory a.subCategoryImage,
+div.subCategory a.subCategoryImage:hover {
+	display: block;
+	text-align: center;
+}
+
+div.subCategory h2 {
+  font-size: ( @baseFontSize + 5 );
+  font-family: "robotobold";
+  font-weight: normal;
+  margin: 0;
+}
+
+div.subCategory h2 a {
+  color: @gray;
+  .transition(0.5s);
+}
+
+div.subCategory h2 a:hover {
+  color: @linkColorHover;
+  text-decoration: none;
+}
+
+div.subCategory p {
+  margin: 0 0 (@baseLineHeight / 2);
+}
+
+div.subCategoryContainer {
+	float: left;
+}
+
+div.subCategoryContainerLast {
+}
+
+div.subCategory a.subCategoryMore {
+  background: @grayLighter;
+  color: darken(@grayLighter, 50%);
+  display: inline-block;
+  font-weight: bold;
+  padding: ( @baseLineHeight / 2 );
+  line-height: 1;
+  text-shadow: 1px 1px 0 lighten(@grayLighter, 50%);
+  .border-radius(3px);
+  .transition(0.5s);
+}
+
+div.subCategory a.subCategoryMore:hover,
+div.subCategory a.subCategoryMore:focus,
+div.subCategory a.subCategoryMore:active {
+  background: @baseColor;
+  color: @white;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 darken(@baseColor, 5%);
+}
+
+div.tagItemBody {
+	margin: 0;
+	padding: 0;
+}
+
+div.tagItemBody p {
+  margin-top: 0;
+}
+
+div.tagItemCategory {
+	border-right: 1px solid #ccc;
+	display: inline;
+	margin: 0 8px 0 0;
+	padding: 0 8px 0 0;
+}
+
+div.tagItemCategory a {
+}
+
+div.tagItemCategory span {
+	color: #555;
+	font-weight: bold;
+	padding: 0 4px 0 0;
+}
+
+div.tagItemExtraFields {
+}
+
+div.tagItemExtraFields h4 {
+}
+
+div.tagItemExtraFields ul {
+}
+
+div.tagItemExtraFields ul li {
+}
+
+div.tagItemExtraFields ul li span.tagItemExtraFieldsLabel {
+}
+
+div.tagItemExtraFields ul li span.tagItemExtraFieldsValue {
+}
+
+div.tagItemHeader {
+}
+
+div.tagItemHeader h2.tagItemTitle {
+  font-family: "robotoregular";
+  font-size: (@baseFontSize + 12);
+  font-weight: normal;
+  margin: 0 0 (@baseLineHeight / 4);
+  padding: 0;
+  line-height: (@baseLineHeight * 1.5);
+}
+
+div.tagItemHeader span.tagItemDateCreated {
+  color: @grayLight;
+  font-family: "robotobold";
+  font-size: (@T3smallFontSize);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+div.tagItemImageBlock {
+  margin: 0 0 @baseLineHeight;
+  padding: 0;
+}
+
+div.tagItemIntroText {
+  margin: 0 0 (@baseLineHeight);
+  padding: 0;
+}
+
+div.tagItemIntroText img {
+	max-width: 100%;
+
+	&[align="left"] {
+		margin: 0 20px 10px 0;
+	}
+
+	&[align="right"] {
+		margin: 0 0 10px 20px;
+	}
+}
+
+div.tagItemList {
+}
+
+/* Read more link */
+div.tagItemReadMore {
+  display: block;
+  overflow: hidden;
+}
+
+div.tagItemReadMore a {
+  background: @grayLighter;
+  color: @grayLight;
+  font-size: @T3smallFontSize;
+  float: right;
+  padding: 5px 15px;
+  .border-radius(15px);
+  .transition(0.5s);
+}
+
+div.tagItemReadMore a:hover,
+div.tagItemReadMore a:focus,
+div.tagItemReadMore a:active {
+  background: @linkColorHover;
+  color: @white;
+  text-decoration: none;
+}
+
+div.tagItemView {
+  border-bottom: 1px solid lighten(@grayLight, 30%);
+  float: left;
+  margin: 0 0 (@baseLineHeight * 1.5);
+  padding: 0 0 (@baseLineHeight * 1.5);
+}
+
+/*----------------------------------------------------------------------
+	Component: Itemlist view (user)
+----------------------------------------------------------------------*/
+div.tagView {
+}
+
+div.userItemView {
+  border-bottom: 1px solid #eee;
+  padding-bottom: @baseLineHeight;
+  margin-bottom: @baseLineHeight;
+}
+
+/* User block ---*/
+div.userBlock {
+  background: lighten(@grayLighter, 5%);
+	border: 1px solid lighten(@grayLight, 20%);
+	clear: both;
+	margin: 0 0 @baseLineHeight 0;
+	padding: @baseLineHeight;
+  text-shadow: 1px 1px 0 @white;
+  .border-radius(3px);
+  .transition(0.5s);
+}
+
+div.userBlock:hover {
+  border-color: lighten(@linkColorHover, 10%);
+  .box-shadow(0 0 5px lighten(@linkColorHover, 20%));
+}
+
+div.userBlock .user-avatar {
+  float: left;
+  height: 62px;
+  margin-right: (@baseLineHeight / 2);
+  position: relative;
+  width: 62px;
+}
+
+div.userBlock img {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 62px !important;
+  height: 62px !important;
+  z-index: 10;
+}
+
+div.userBlock span.mask {
+  background: url(../images/avt-mask.png) no-repeat left top;
+  display: block;
+  height: 62px;
+  position: relative;
+  width: 62px;
+  z-index: 20;
+}
+
+div.userBlock h2 {
+  font-family: @fontFaceBold;
+  font-size: (@baseFontSize + 5);
+  margin: 0 0 (@baseLineHeight / 2);
+  padding: 0;
+  line-height: 1;
+}
+
+div.userBlock div.userDescription p {
+  margin-bottom: 5px;
+}
+
+div.userBlock div.userAdditionalInfo {
+  color: @grayLight;
+  font-size: @T3smallFontSize;
+	margin: 0;
+	padding: 0 0 0 60px;
+}
+
+/* User item body ---*/
+div.userItemBody {
+	margin: 0;
+	padding: 0;
+}
+
+div.userItemHeader {
+}
+
+div.userItemHeader h3.userItemTitle {
+  font-family: "robotoregular";
+  font-size: (@baseFontSize + 12);
+  font-weight: normal;
+  margin: 0 0 (@baseLineHeight / 4);
+  padding: 0;
+  line-height: (@baseLineHeight * 1.5);
+}
+
+div.userItemHeader h3.userItemTitle a {
+  color: @gray;
+}
+
+div.userItemHeader h3.userItemTitle a:hover,
+div.userItemHeader h3.userItemTitle a:focus,
+div.userItemHeader h3.userItemTitle a:active {
+  color: @linkColorHover;
+  text-decoration: none;
+}
+
+div.userItemHeader h3.userItemTitle span sup {
+  color: #CF1919;
+  font-size: 12px;
+  /* "Unpublished" presented in superscript */
+  text-decoration: none;
+}
+
+/* User item date */
+div.userItemHeader span.userItemDateCreated {
+  color: @grayLight;
+  font-size: @T3smallerFontSize;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* User item meta */
+div.userItemCategory {
+}
+
+div.userItemCategory a {
+  color: @linkColor;
+}
+
+div.userItemCategory span {
+}
+
+/* User item image */
+div.userItemImageBlock {
+  margin: 0 0 (@baseLineHeight / 2);
+  padding: 0;
+}
+
+/* Anchor link to comments */
+div.userItemCommentsLink {
+	border-right: 1px solid #ccc;
+	display: inline;
+	margin: 0 8px 0 0;
+	padding: 0 8px 0 0;
+}
+
+div.userItemCommentsLink a {
+  color: @linkColor;
+}
+
+div.userItemCommentsLink a:hover {
+  color: @linkColorHover;
+}
+
+/* User item intro */
+div.userItemIntroText {
+}
+
+div.userItemIntroText img {
+
+	&[align="left"] {
+		margin: 0 20px 10px 0;
+	}
+
+	&[align="right"] {
+		margin: 0 0 10px 20px;
+	}
+}
+
+div.userItemIsFeatured {
+}
+
+div.userItemLinks {
+	margin: 0;
+	padding: 0;
+}
+
+div.userItemList {
+}
+
+/* User item tag */
+div.userItemTagsBlock {
+}
+
+div.userItemTagsBlock span {
+  color: @grayLight;
+  display: block;
+  float: left;
+  font-weight: bold;
+  padding: 0 4px 0 0;
+}
+
+div.userItemTagsBlock span:after {
+  content: ":";
+}
+
+div.userItemTagsBlock ul.userItemTags {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.userItemTagsBlock ul.userItemTags li {
+  background: none;
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0 4px 0 0;
+  text-align: center;
+}
+
+div.userItemTagsBlock ul.userItemTags li a {
+  background: @grayLighter;
+  color: @gray;
+  font-size: @T3smallerFontSize;
+  font-weight: bold;
+  padding: 4px 10px;
+  text-shadow: 1px 1px 0 @white;
+  .border-radius(10px);
+  .transition(0.5s);
+}
+
+div.userItemTagsBlock ul.userItemTags li a:hover,
+div.userItemTagsBlock ul.userItemTags li a:focus,
+div.userItemTagsBlock ul.userItemTags li a:active {
+  background: @linkColorHover;
+  color: @white;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 darken(@linkColorHover, 5%);
+}
+
+/* Read more link */
+div.userItemReadMore {
+  display: block;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+div.userItemReadMore a {
+  background: @grayLighter;
+  color: @grayLight;
+  font-size: @T3smallFontSize;
+  float: right;
+  padding: 5px 15px;
+  .border-radius(15px);
+  .transition(0.5s);
+}
+
+div.userItemReadMore a:hover,
+div.userItemReadMore a:focus,
+div.userItemReadMore a:active {
+  background: @linkColorHover;
+  color: @white;
+  text-decoration: none;
+}
+
+div.userItemViewUnpublished {
+	background: #fffff2;
+	border: 4px dashed #ccc;
+	margin: 8px 0;
+	opacity: 0.9;
+	padding: 8px;
+}
+
+/*----------------------------------------------------------------------
+	Component: Itemlist view (user)
+----------------------------------------------------------------------*/
+/* User info block */
+div.userView {
+}
+
+/* Items presented in a list */
+h2.latestItemTitleList {
+	border-bottom: 1px dotted #ccc;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: normal;
+	margin: 8px 0 2px 0;
+	padding: 2px 0;
+}
+
+img {
+	border: none;
+}
+
+img.itemRelImg {
+}
+
+img.k2AccountPageImage {
+	border: 4px solid #ddd;
+	display: block;
+	margin: 10px 0;
+	padding: 0;
+}
+
+span.catItemAddLink {
+	border-bottom: 1px dotted #ccc;
+	display: block;
+	margin: 0 0 4px 0;
+	padding: 8px 0;
+	text-align: right;
+}
+
+span.catItemAddLink a {
+  color: @linkColor;
+	padding: 4px 16px;
+	text-decoration: none;
+}
+
+span.catItemAddLink a:hover {
+  color: @linkColorHover;
+}
+
+/* Modified date */
+span.catItemDateModified {
+	border-top: 1px solid #ddd;
+	color: #999;
+	display: block;
+	margin: 4px 0;
+	padding: 4px;
+	text-align: right;
+}
+
+span.catItemEditLink {
+	display: block;
+	float: right;
+	margin: 0;
+	padding: 4px 0;
+	text-align: right;
+	width: 120px;
+}
+
+span.catItemEditLink a {
+  color: @linkColor;
+	padding: 2px 12px;
+	text-decoration: none;
+}
+
+span.catItemEditLink a:hover {
+color: @linkColorHover;
+}
+
+span.catItemEditLink a.modal {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: inherit;
+  text-decoration: none;
+  top: 0;
+  vertical-align: middle;
+  width: auto;
+  z-index: 10;
+  display: inline-block;
+}
+
+span.catItemHits {
+}
+
+span.catItemImage {
+	display: block;
+	margin: 0;
+	text-align: center;
+}
+
+span.catItemImage img {
+}
+
+span.genericItemImage {
+	display: block;
+  margin-bottom: 20px;
+}
+
+span.genericItemImage img {
+  .border-radius(3px);
+}
+
+span.itemDateModified {
+}
+
+span.itemEditLink {
+	display: block;
+	float: right;
+	margin: 0;
+	padding: 4px 0;
+	text-align: right;
+	width: 120px;
+}
+
+span.itemEditLink a {
+	background: #eee;
+	border: 1px solid #ccc;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 2px 12px;
+	text-decoration: none;
+}
+
+.itemEditLink a.modal {
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  position: inherit;
+  text-decoration: none;
+  top: 0;
+  width: auto;
+}
+
+span.itemEditLink a:hover {
+	color: @linkColorHover;
+}
+
+span.itemHits {
+	float: left;
+}
+
+span.itemImage {
+	display: block;
+	margin: 0 0 8px 0;
+	text-align: center;
+}
+
+span.itemImage a.modal {
+  border: 0px;
+  display: block;
+  margin: 0;
+  position: relative;
+  top: auto;
+  left: auto;
+  width: auto;
+  .border-radius(0px);
+  .box-shadow(0 0 0 0);
+  z-index: 10;
+}
+
+span.itemImage img {
+  .border-radius(3px);
+}
+
+span.itemImageCaption {
+	color: #666;
+	display: block;
+	float: left;
+	font-size: 11px;
+}
+
+span.itemImageCredits {
+	color: #999;
+	display: block;
+	float: right;
+	font-size: 11px;
+	font-style: italic;
+}
+
+span.latestItemDateCreated {
+	color: #999;
+	font-size: 11px;
+}
+
+span.latestItemImage {
+	display: block;
+	margin: 0 8px 8px 0;
+	text-align: center;
+}
+
+span.latestItemImage img {
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+
+span.latestItemsUserEmail {
+	color: #555;
+	display: block;
+	font-weight: bold;
+}
+
+span.latestItemsUserURL {
+	color: #555;
+	display: block;
+	font-weight: bold;
+}
+
+span.siteRoot {
+	display: none;
+}
+
+span.tagItemImage {
+}
+
+span.tagItemImage img {
+	width: 100% !important;
+}
+
+span.ubUserEmail {
+	background: url(../images/fugue/mail.png) no-repeat 50% 50%;
+	display: inline-block;
+	height: 16px;
+	margin: 0 2px 0 0;
+	overflow: hidden;
+	padding: 0;
+	width: 16px;
+}
+
+span.ubUserEmail a {
+  color: @linkColor;
+	display: inline-block;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+	text-indent: -9999px;
+	width: 16px;
+}
+
+span.userEmail {
+	color: #555;
+	display: block;
+	font-weight: bold;
+}
+
+span.userItemAddLink {
+  text-align: right;
+  a.modal {
+    background: none;
+    padding: 0;
+    border: 0;
+    z-index: 10;
+
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+span.userItemAddLink a {
+	background: #eee;
+	border: 1px solid #ccc;
+	padding: 4px 16px;
+	text-decoration: none;
+}
+
+span.userItemAddLink a:hover {
+	background: #ffffcc;
+  color: @linkColorHover;
+}
+
+span.userItemEditLink {
+	display: block;
+	float: right;
+	margin: 0;
+	padding: 4px 0;
+	text-align: right;
+	width: 120px;
+}
+
+span.userItemEditLink a {
+	background: #eee;
+	border: 1px solid #ccc;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 2px 12px;
+	text-decoration: none;
+}
+
+span.userItemEditLink a:hover {
+	background: #ffffcc;
+}
+
+span.userItemEditLink a.modal {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: inherit;
+  text-decoration: none;
+  top: 0;
+  vertical-align: middle;
+  width: auto;
+  z-index: 10;
+}
+
+span.userItemImage {
+  margin: 0 0 @baseLineHeight;
+  padding: 0;
+}
+
+span.userItemImage img {
+ border-radius: 3px;
+}
+
+span.userURL {
+	color: #555;
+	display: block;
+	font-weight: bold;
+}
+
+table.calendar {
+	background: #fff;
+	border-collapse: collapse;
+	margin: 0 auto;
+  width: 100%;
+}
+
+table.calendar tr td {
+	background: #fff;
+	border: 1px solid #f4f4f4;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table.calendar tr td.calendarCurrentMonth {
+	background: #f3f3f3;
+}
+
+table.calendar tr td.calendarDate {
+}
+
+table.calendar tr td.calendarDateEmpty {
+	background: #fbfbfb;
+}
+
+table.calendar tr td.calendarDateLinked {
+  background: #eee;
+	padding: 0;
+}
+
+table.calendar tr td.calendarDateLinked a {
+	display: block;
+	text-decoration: none;
+}
+
+table.calendar tr td.calendarDateLinked a:hover {
+	background: @baseColor;
+	color: #fff;
+	display: block;
+	padding: 2px;
+	text-decoration: none;
+}
+
+table.calendar tr td.calendarDayName {
+	background: #e9e9e9;
+	font-size: 11px;
+	width: 14.2%;
+}
+
+table.calendar tr td.calendarNavMonthNext {
+	background: #f3f3f3;
+	text-align: center;
+}
+
+table.calendar tr td.calendarNavMonthNext a {
+  color: @linkColor;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+table.calendar tr td.calendarNavMonthNext a:hover {
+  color: @linkColorHover;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+table.calendar tr td.calendarNavMonthPrev {
+	background: #f3f3f3;
+	text-align: center;
+}
+
+table.calendar tr td.calendarNavMonthPrev a {
+	font-size: 20px;
+	text-decoration: none;
+}
+
+table.calendar tr td.calendarNavMonthPrev a:hover {
+	font-size: 20px;
+	text-decoration: none;
+}
+
+table.calendar tr td.calendarToday {
+	background: @baseColor;
+	color: #fff;
+}
+
+table.calendar tr td.calendarTodayLinked {
+	background: @baseColor;
+	color: #fff;
+	padding: 0;
+}
+
+table.calendar tr td.calendarTodayLinked a {
+	color: #fff;
+	display: block;
+	padding: 2px;
+	text-decoration: none;
+}
+
+table.calendar tr td.calendarTodayLinked a:hover {
+	background: #BFD9FF;
+	display: block;
+	padding: 2px;
+	text-decoration: none;
+}
+
+/* --- Extra fields: CSV data styling --- */
+table.csvData {
+}
+
+table.csvData tr td {
+}
+
+table.csvData tr th {
+}
+
+/* Root level (0) */
+	ul.level0 {
+}
+
+ul.level0 li {
+}
+
+ul.level0 li a {
+}
+
+ul.level0 li a span {
+}
+
+ul.level0 li a:hover {
+}
+
+ul.level0 li a:hover span {
+}
+
+/* First level (1) */
+		ul.level1 {
+}
+
+ul.level1 li {
+}
+
+ul.level1 li a {
+}
+
+ul.level1 li a span {
+}
+
+ul.level1 li a:hover {
+}
+
+ul.level1 li a:hover span {
+}
+
+.clearList {
+	clear: both; /* this class is used to clear all previous floating list elements */
+	display: none;
+	float: none;
+}
+
+/* --- Clearing --- */
+.clr {
+	border: none;
+	clear: both;
+	display: block;
+	float: none;
+	height: 0;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* --- Rating --- */
+.itemRatingForm {
+	display: block;
+	float: left;
+	line-height: 25px;
+	vertical-align: middle;
+}
+
+#k2Container .itemRatingList {
+	background-position: left top !important;
+	float: left;
+	height: 25px;
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 125px;
+}
+
+#k2Container ul.itemRatingList li.itemCurrentRating {
+	background-position: 0 center !important;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+#k2Container .itemRatingList a,
+#k2Container .itemRatingList .itemCurrentRating {
+	border: none;
+	cursor: pointer;
+	height: 25px;
+	left: 0;
+	line-height: 25px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -1000px;
+	top: 0;
+}
+
+#k2Container .itemRatingList a.five-stars {
+	width: 100%;
+	z-index: 2;
+}
+
+#k2Container .itemRatingList a.four-stars {
+	width: 80%;
+	z-index: 3;
+}
+
+#k2Container .itemRatingList a.one-star {
+	width: 20%;
+	z-index: 6;
+}
+
+#k2Container .itemRatingList a.three-stars {
+	width: 60%;
+	z-index: 4;
+}
+
+#k2Container .itemRatingList a.two-stars {
+	width: 40%;
+	z-index: 5;
+}
+
+#k2Container .itemRatingList a:hover {
+	background-position: left bottom !important;
+}
+
+#k2Container .itemRatingList li {
+	background: none;
+	display: inline;
+	padding: 0;
+}
+
+.itemRatingList,
+.itemRatingList a:hover {
+	background: transparent url(../images/system/transparent_star.gif) left -1000px repeat-x;
+}
+
+
+#k2Container .itemRatingList .itemCurrentRating {
+  background-image: url(../images/system/transparent_star.gif) !important;
+}
+
+#k2Container .itemRatingLog {
+	float: left;
+	font-size: 11px;
+	margin: 0;
+	padding: 0 0 0 4px;
+}
+
+/*----------------------------------------------------------------------
+	Component: Register & profile page views (register.php & profile.php)
+----------------------------------------------------------------------*/
+.k2AccountPage {
+}
+
+.k2AccountPage div.k2AccountPageNotice {
+	padding: 8px;
+}
+
+.k2AccountPage div.k2AccountPageUpdate {
+	border-top: 1px dotted #ccc;
+	margin: 8px 0;
+	padding: 8px;
+	text-align: right;
+}
+
+.k2AccountPage table {
+}
+
+.k2AccountPage table tr td {
+}
+
+.k2AccountPage table tr td label {
+}
+
+.k2AccountPage table tr th {
+}
+
+/* Profile edit */
+.k2AccountPage table.admintable {
+}
+
+.k2AccountPage table.admintable td.key,
+.k2AccountPage table.admintable td.paramlist_key {
+	background: #f6f6f6;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+	color: #666;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: right;
+	width: 140px;
+}
+
+.k2AccountPage table.admintable tr td {
+}
+
+.k2AccountPage table.admintable tr td span {
+}
+
+.k2AccountPage table.admintable tr td span label {
+}
+
+.k2AccountPage td#userAdminParams {
+	margin: 0;
+	padding: 0;
+}
+
+.k2AccountPage th.k2ProfileHeading {
+	background: #f6f6f6;
+  color: @gray;
+  font-size: @T3biggerFontSize;
+	padding: 5px 10px;
+	text-align: left;
+}
+
+/* --- Avatars --- */
+.k2Avatar {
+  float: left;
+  height: 62px;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 62px;
+}
+
+.k2Avatar:hover {
+  text-decoration: none;
+}
+
+.k2Avatar img {
+	display: block;
+  height: 62px !imporant;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 62px !important;
+}
+
+.k2Avatar span.mask {
+  background: url(../images/avt-mask.png) no-repeat left top;
+  display: block;
+  height: 62px;
+  position: relative;
+  width: 62px;
+  z-index: 20;
+}
+
+/* --- Moderate comments --- */
+#k2FrontendContainer .hidden-phone .modal {
+  background: none;
+  border: 0;
+  position: static;
+  margin-left: 0;    
+  box-shadow: none;
+  z-index: 10;
+}
+
+/* --- General padding --- */
+.k2Padding {
+	padding: 4px;
+}
+
+.largerFontSize {
+	font-size: 150%;
+	line-height: 140%;
+}
+
+.lastItem {
+	border: none; /* class appended on last list item */
+}
+
+/* --- ReCaptcha --- */
+.recaptchatable .recaptcha_image_cell,
+#recaptcha_table {
+	background-color: #fff !important;
+}
+
+/* --- CSS added with Javascript --- */
+.smallerFontSize {
+	font-size: 100%;
+	line-height: inherit;
+}
+
+/* --- Global K2 container --- */
+#k2Container {
+	padding: 0 0 24px 0;
+}
+
+/* --- Google Search --- */
+#k2Container div.gsc-branding-text {
+	text-align: right;
+}
+
+#k2Container div.gsc-control {
+	width: 100%;
+}
+
+#k2Container div.gs-visibleUrl {
+	display: none;
+}
+
+#recaptcha_response_field {
+	background-color: #fff !important;
+	border-color: #ccc !important;
+}
+
+#recaptcha_table {
+	border-color: #ccc !important;
+}
+
+/* --- Item block for each item group --- */
+div.catItemView {
+	padding: 0;
+}
+
+/* Related by tag */
+div.itemRelated {
+	margin: 0;
+	padding: 0;
+}
+
+/* --- Calendar --- */
+div.k2CalendarBlock {
+	/* use this height value so that the calendar height won't change on Month change via ajax */
+}
+
+/* --- Primary lists in modules --- */
+div.k2LatestCommentsBlock ul,
+div.k2TopCommentersBlock ul,
+div.k2ItemsBlock ul,
+div.k2LoginBlock ul,
+div.k2UserBlock ul.k2UserBlockActions,
+div.k2UserBlock ul.k2UserBlockRenderedMenu,
+div.k2ArchivesBlock ul,
+div.k2AuthorsListBlock ul,
+div.k2CategoriesListBlock ul,
+div.k2UsersBlock ul {
+}
+
+/* User items */
+div.userItemView {
+}
+
+
+.k2UserBlock ul.k2UserBlockActions a.modal,
+.userItemAddLink a.modal {
+  border: 0;
+  display: block;
+  top: auto;
+  left: 0px;
+  margin: 0;
+  position: relative;
+  width: auto;
+  .border-radius(0);
+  .box-shadow(none);
+  z-index: 10;
+}
+
+.itemListView .catItemIntroText img[align=left],
+.itemIntroText img[align=left] {
+  margin: 0 @T3globalMargin (@T3globalMargin/2) 0;
+}
+
+.itemListView .catItemIntroText img[align=right],
+.itemIntroText img[align=right] {
+  margin: 0 0 (@T3globalMargin/2) @T3globalMargin;
+}
+
+.k2AccountPage table.admintable td #genderm, 
+.k2AccountPage table.admintable td #genderf {
+  margin-top: 4px !important;
+}

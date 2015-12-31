@@ -1,0 +1,676 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  border-bottom: 5px solid #1ba1e2;
+}
+.ja-header {
+  background: white;
+  border-bottom: #dddddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo {
+  float: left;
+}
+.logo h1,
+.logo h1 a {
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+}
+.logo-image {
+  overflow: hidden;
+}
+.logo-image a {
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 50px;
+}
+.logo-image span,
+.logo-image small {
+  display: none;
+}
+.logo-text h1 {
+  color: #444444;
+}
+.logo-text h1 a {
+  color: #444444;
+  text-decoration: none;
+}
+.logo-text:hover h1 a,
+.logo-text h1 a:hover,
+.logo-text h1 a:active,
+.logo-text h1 a:focus {
+  text-decoration: none;
+}
+.logo-text .site-slogan {
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.head-search {
+  float: right;
+  margin-top: 10px;
+}
+.head-search form {
+  margin: 0;
+}
+.head-search label {
+  display: none;
+}
+.head-search .input {
+  background: url(../images/ico/search-invert.png) no-repeat 8px center white;
+  width: 120px;
+  padding-left: 26px;
+}
+/* focus state */
+
+.head-search .input:focus {
+  background-color: white;
+  color: #444444;
+}
+.ja-slideshow .container {
+  padding: 60px 0 0;
+}
+.ja-masshead {
+  background: #1ba1e2;
+  color: white;
+  text-transform: uppercase;
+}
+.ja-masshead .module,
+.ja-masshead .t3-module {
+  margin-bottom: 0px;
+}
+.ja-masshead h3 {
+  color: white;
+  font-family: 'robotobold';
+  font-size: 43px;
+  font-size: normal;
+  padding: 20px 0;
+  text-shadow: 1px 1px 0 #1681b4;
+}
+.ja-sl {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.ja-sl-1 {
+  background: #1ba1e2;
+  color: white;
+}
+.ja-sl-1 .module {
+  border-left: 1px solid #47b4e9;
+  margin-left: -16px;
+  padding-left: 16px;
+}
+.ja-sl-1 .item-first .module {
+  border-left: 0;
+}
+.ja-sl-1 .module .module-title {
+  color: white;
+}
+.ja-sl-1 h3.sl-title {
+  border-bottom: 1px solid #47b4e9;
+  text-shadow: -1px -1px 0 #1681b4;
+  color: white;
+  margin: 0 0 20px 0;
+  padding: 0 0 40px;
+  line-height: 1;
+  text-align: center;
+}
+.ja-sl-1 .module {
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 #1891cb;
+}
+.ja-sl-1 .module h4 {
+  color: white;
+}
+.ja-sl-1 .module p.readmore {
+  margin: 0;
+}
+.ja-sl-1 .module p.readmore a {
+  background: url(../images/readmore-bg.png) no-repeat left top;
+  color: white;
+  display: inline-block;
+  height: 40px;
+  text-indent: -999em;
+  width: 40px;
+}
+.ja-sl-1 .module p.readmore a:hover,
+.ja-sl-1 .module p.readmore a:focus,
+.ja-sl-1 .module p.readmore a:active {
+  background-position: left bottom;
+  color: white;
+}
+.ja-sl-1 .module a {
+  color: white;
+}
+.ja-sl-1 .module a:hover,
+.ja-sl-1 .module a:focus,
+.ja-sl-1 .module a:active {
+  color: white;
+}
+.ja-sl-2 {
+  text-align: center;
+}
+.ja-sl-2 .module {
+  margin-bottom: 0;
+}
+.ja-sl-2 .module .module-ct h3 {
+  font-family: 'robotoregular';
+  font-weight: normal;
+  line-height: 20px;
+}
+.ja-sl-2 .module p.intro {
+  color: #999999;
+}
+.ja-sl-3 {
+  background: whitesmoke;
+  border-top: 1px solid #e1e1e1;
+  padding-bottom: 0;
+}
+.ja-sl-3 .container {
+  border-bottom: 1px solid #e1e1e1;
+}
+.ja-sl-4 {
+  background: whitesmoke;
+}
+.ja-sl-4 .module {
+  margin-bottom: 0;
+}
+.ja-sl-5 {
+  background-color: #222222;
+  border-top: 1px solid #666666;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.ja-sl-5 .container {
+  border-bottom: 1px solid #333333;
+  padding: 20px 0;
+}
+.ja-sl-5 .module {
+  margin-bottom: 0;
+}
+.ja-sl-5 a {
+  color: #1ba1e2;
+}
+.ja-sl-5 a:hover,
+.ja-sl-5 a:focus,
+.ja-sl-5 a:active {
+  color: #1ba1e2;
+}
+.ja-sl-5 div.jumbotron h3 {
+  color: white;
+}
+.ja-sl-6 {
+  background-color: #222222;
+  color: #666666;
+  padding: 0;
+  text-shadow: 0px 0px 2px #080808;
+}
+.ja-sl-6 .container {
+  border-bottom: 1px solid #333333;
+  padding: 20px 0;
+}
+.ja-sl-6 .module {
+  margin-bottom: 0;
+}
+.ja-sl-6 .module-title {
+  color: white;
+}
+.ja-mainbody {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.ja-footer {
+  background: #222222;
+  color: #666666;
+  *zoom: 1;
+}
+.ja-footer:before,
+.ja-footer:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.ja-footer:after {
+  clear: both;
+}
+.ja-footer small {
+  display: block;
+  font-size: 100%;
+}
+.ja-footer a {
+  color: #999999;
+}
+.ja-footer a:hover,
+.ja-footer a:active,
+.ja-footer a:focus {
+  color: #e6e6e6;
+}
+.ja-footnav {
+  background: #222222;
+  font-size: 11px;
+  padding: 40px 0 0;
+  *zoom: 1;
+}
+.ja-footnav:before,
+.ja-footnav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.ja-footnav:after {
+  clear: both;
+}
+.ja-footnav ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+.ja-footnav li {
+  border-right: 1px solid #333333;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 1;
+}
+.ja-footnav li:first-child {
+  padding-left: 0;
+}
+.ja-footnav li:last-child {
+  border-right: 0;
+}
+.ja-footnav li a {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.ja-footnav li a:hover,
+.ja-footnav li a:focus,
+.ja-footnav li a:active {
+  background: none;
+  color: #1ba1e2;
+  text-decoration: underline;
+}
+.ja-copyright {
+  font-size: 11px;
+  padding: 10px 0 40px;
+  *zoom: 1;
+  text-align: center;
+}
+.ja-copyright:before,
+.ja-copyright:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.ja-copyright:after {
+  clear: both;
+}
+ul.social-list {
+  display: block;
+  margin: 10px 0 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul.social-list li {
+  display: block;
+  float: left;
+  padding: 5px 0;
+  width: 50%;
+}
+ul.social-list li a {
+  color: #666666;
+  display: block;
+  width: 100%;
+}
+ul.social-list li a:hover,
+ul.social-list li a:focus,
+ul.social-list li a:active {
+  color: #1ba1e2;
+  text-decoration: none;
+}
+ul.social-list li a span {
+  background-image: url(../images/social-list.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  width: 20px;
+}
+ul.social-list li.facebook a span {
+  background-position: 0px 0px;
+}
+ul.social-list li.facebook a:hover span {
+  background-position: -20px 0px;
+}
+ul.social-list li.flickr a span {
+  background-position: 0px -20px;
+}
+ul.social-list li.flickr a:hover span {
+  background-position: -20px -20px;
+}
+ul.social-list li.twitter a span {
+  background-position: 0px -40px;
+}
+ul.social-list li.twitter a:hover span {
+  background-position: -20px -40px;
+}
+ul.social-list li.feed a span {
+  background-position: 0px -60px;
+}
+ul.social-list li.feed a:hover span {
+  background-position: -20px -60px;
+}
+div.acymailing_form {
+  overflow: hidden;
+}
+div.acymailing_form p {
+  float: left;
+}
+div.acymailing_form p.onefield {
+  width: 65%;
+}
+div.acymailing_form p.onefield .inputbox {
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 30px;
+  padding: 5px 10px;
+  width: 100%;
+}
+div.acymailing_form p.acysubbuttons {
+  width: 35%;
+}
+div.acymailing_form p.acysubbuttons .button {
+  background: #1a1a1a !important;
+  border: 1px solid #333333;
+  border-left: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  height: 30px;
+  padding: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+div.contact h3 {
+  font-family: "robotobold";
+  font-size: 23px;
+  margin: 0;
+  padding: 0;
+}
+div.contact fieldset {
+  border: 1px solid #dddddd;
+  padding: 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+div.contact fieldset legend {
+  background: white;
+  border: 0;
+  color: #999999;
+  font-size: 13px;
+  margin-bottom: 0;
+  width: auto;
+}
+legend + .control-group {
+  margin-top: 0;
+}
+div.contact-miscinfo .dl-horizontal {
+  margin-bottom: 0;
+}
+.form-horizontal .control-label label {
+  font-weight: bold;
+}
+div.contact .form-actions {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.personal-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.personal-info img {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.personal-info h3 {
+  font-family: 'robotobold';
+  font-weight: normal;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.personal-info span.job-title {
+  color: #999999;
+}
+.personal-info p {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+.personal-info ul {
+  margin: 0;
+  paddign: 0;
+  list-style: none;
+  text-align: center;
+}
+.personal-info ul li {
+  background: none;
+  display: inline-block;
+  height: 16px;
+  margin: 0 5px;
+  width: 16px;
+}
+.personal-info ul li a {
+  background-image: url(../images/personal-socials.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 16px;
+  width: 16px;
+  text-indent: -999em;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.personal-info ul li.facebook a {
+  background-position: 0px 0px;
+}
+.personal-info ul li.facebook a:hover {
+  background-position: -16px 0px;
+}
+.personal-info ul li.skype a {
+  background-position: 0px -16px;
+}
+.personal-info ul li.skype a:hover {
+  background-position: -16px -16px;
+}
+.personal-info ul li.twitter a {
+  background-position: 0px -32px;
+}
+.personal-info ul li.twitter a:hover {
+  background-position: -16px -32px;
+}
+.personal-info ul li.vimeo a {
+  background-position: 0px -48px;
+}
+.personal-info ul li.vimeo a:hover {
+  background-position: -16px -48px;
+}
+.personal-info ul li.youtube a {
+  background-position: 0px -64px;
+}
+.personal-info ul li.youtube a:hover {
+  background-position: -16px -64px;
+}
+.author-avt {
+  display: block;
+  float: left;
+  height: 62px;
+  margin-right: 10px;
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+  width: 62px;
+}
+img.author-avt {
+  position: absolute;
+  width: 62px;
+  z-index: 10;
+}
+.author-avt .mask {
+  background: url(../images/avt-mask.png) no-repeat left top;
+  display: block;
+  height: 62px;
+  position: relative;
+  width: 62px;
+  z-index: 20;
+}
+div.quick-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+div.quick-links ul li {
+  display: inline;
+  padding: 0 5px;
+}
+#search-form #finder-search fieldset.word {
+  margin-bottom: 20px;
+}
+#search-form #finder-search .inputbox {
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+#search-form #finder-search .button {
+  border: 1px solid #106087;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 10px;
+  vertical-align: middle;
+  color: white;
+  text-shadow: 1px 1px 0 #1681b4;
+  background-color: #35ace6;
+  background-image: -moz-linear-gradient(top, #47b4e9, #1ba1e2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#47b4e9), to(#1ba1e2));
+  background-image: -webkit-linear-gradient(top, #47b4e9, #1ba1e2);
+  background-image: -o-linear-gradient(top, #47b4e9, #1ba1e2);
+  background-image: linear-gradient(to bottom, #47b4e9, #1ba1e2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='argb(#47b4e9)', endColorstr='argb(#1ba1e2)', GradientType=0);
+  border-color: #1ba1e2 #1ba1e2 #13709e;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #1ba1e2;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset -1px 1px 0 #5ebdec;
+  -moz-box-shadow: inset -1px 1px 0 #5ebdec;
+  box-shadow: inset -1px 1px 0 #5ebdec;
+}
+#search-form #finder-search .button:hover,
+#search-form #finder-search .button:active,
+#search-form #finder-search .button.active,
+#search-form #finder-search .button.disabled,
+#search-form #finder-search .button[disabled] {
+  color: white;
+  background-color: #1ba1e2;
+  *background-color: #1891cb;
+}
+#search-form #finder-search .button:active,
+#search-form #finder-search .button.active {
+  background-color: #1681b4 \9;
+}
+#search-form #finder-search .button:hover {
+  background-position: 0 -15px;
+  color: white;
+  text-shadow: 1px 1px 0 #1681b4;
+  background-color: #35ace6;
+  background-image: -moz-linear-gradient(top, #47b4e9, #1ba1e2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#47b4e9), to(#1ba1e2));
+  background-image: -webkit-linear-gradient(top, #47b4e9, #1ba1e2);
+  background-image: -o-linear-gradient(top, #47b4e9, #1ba1e2);
+  background-image: linear-gradient(to bottom, #47b4e9, #1ba1e2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='argb(#47b4e9)', endColorstr='argb(#1ba1e2)', GradientType=0);
+  border-color: #1ba1e2 #1ba1e2 #13709e;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #1ba1e2;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+#search-form #finder-search .button:hover:hover,
+#search-form #finder-search .button:hover:active,
+#search-form #finder-search .button:hover.active,
+#search-form #finder-search .button:hover.disabled,
+#search-form #finder-search .button:hover[disabled] {
+  color: white;
+  background-color: #1ba1e2;
+  *background-color: #1891cb;
+}
+#search-form #finder-search .button:hover:active,
+#search-form #finder-search .button:hover.active {
+  background-color: #1681b4 \9;
+}
+#finder-filter-window ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#finder-filter-window ul li label {
+  color: #999999;
+  font-weight: bold;
+}

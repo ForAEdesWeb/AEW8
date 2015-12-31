@@ -1,0 +1,57 @@
+//Slideshow
+//---------
+#ja-slideshow .ja-ss-thumbs div {
+  background-image: url(../../../images/themes/violet/sl-nav-bg.png);
+}
+
+// HOME SPOTLIGHTS
+// ---------------------------------------------------------
+
+// Spotlight 1
+// -----------
+.ja-sl-1 .module p.readmore a {
+  background-image: url(../../../images/themes/violet/readmore-bg.png);
+}
+
+
+.home .ja-sl-1 {
+  // jumbotron
+  .jumbotron {
+    #gradient > .radial(lighten(@linkColor, 10%), @linkColor);
+    color: @grayLighter;
+    h1 {
+      color: @white;
+    }
+    .btn-large {
+      .buttonBackground(@grayDark, @grayDarker);
+    }
+  }
+
+}
+
+
+// ---------------------------------------------------------
+// MISC.
+// ---------------------------------------------------------
+ul.social-list li a span {
+  background-image: url(../../../images/themes/violet/social-list.png);
+}
+
+.personal-info ul li a {
+  background-image: url(../../../images/themes/violet/personal-socials.png);
+}
+
+div.itemAuthorLatest ul li a:hover,
+div.itemRelated ul li a:hover {
+  background-image: url(../../../images/themes/violet/bullet-hover.png);
+}
+
+.t3-mainnav .navbar {
+  .nav li.dropdown.open > .dropdown-toggle,
+  .nav li.dropdown.active > .dropdown-toggle,
+  .nav li.dropdown.open.active > .dropdown-toggle,
+  .nav > li.dropdown.open.active > a:hover {
+    color: @baseColor;
+    background: none;
+  }
+}

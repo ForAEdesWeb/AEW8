@@ -1,0 +1,897 @@
+body {
+  border-bottom: 5px solid @baseColor;
+}
+
+// ---------------------------------------------------------
+// HEADER
+// ---------------------------------------------------------
+
+.ja-header {
+  background: @white;
+  border-bottom: 1px solid #ddd;
+  padding-top: @baseLineHeight/2;
+  padding-bottom: @baseLineHeight/2;
+}
+
+
+// Logo
+// ---------------------------------------------------------
+.logo {
+  float: left;
+
+  h1, h1 a {
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+  }
+
+}
+
+
+// Logo Image
+// ----------
+.logo-image {
+  overflow: hidden;
+
+  a {
+    display: inline-block;
+    height: @T3logoHeight;
+    width: @T3logoWidth;
+  }
+
+  //hide sitename and slogan
+  span, small {
+    display: none;
+  }
+
+}
+
+
+// Logo Text
+// ----------
+.logo-text {
+
+  h1 {
+    color: @grayDark;
+  }
+
+  h1 a {
+    color: @grayDark;
+    text-decoration: none;
+  }
+
+  &:hover h1 a,
+  h1 a:hover,
+  h1 a:active,
+  h1 a:focus {
+    text-decoration: none;
+  }
+
+  // Taglines
+  .site-slogan {
+    display: block;
+    font-size: @baseFontSize;
+    margin-top: 5px;
+  }
+
+}
+
+// Head Search
+// ------------------------------------------------------
+.head-search {
+  float: right;
+  margin-top: 10px;
+}
+
+.head-search form {
+  margin: 0;
+}
+
+.head-search label {
+  display: none;
+}
+
+.head-search .search {
+}
+
+.head-search .input {
+  background: url(../images/ico/search-invert.png) no-repeat 8px center lighten(@bodyBackground, 10%);
+  width: 90px;
+  padding-left: 26px;
+}
+
+/* focus state */
+.head-search .input:focus {
+  background-color: @white;
+  color: @grayDark;
+}
+
+// ---------------------------------------------------------
+// SLIDESHOW
+// ---------------------------------------------------------
+.ja-slideshow .container {
+  padding: (@baseLineHeight * 3) 0 0;
+}
+
+// ---------------------------------------------------------
+// MASSHEAD
+// ---------------------------------------------------------
+.ja-masshead {
+  background: @baseColor;
+  color: @white;
+  text-transform: uppercase;
+}
+
+.ja-masshead .module,
+.ja-masshead .t3-module {
+  background: transparent;
+  margin-bottom: 0px;
+}
+
+.ja-masshead .module .module-inner {
+  background: transparent;
+}
+
+.ja-masshead h3 {
+  color: @white;
+  font-family: 'robotobold';
+  font-size: ( @baseFontSize + 30 );
+  font-size: normal;
+  padding: @baseLineHeight 0;
+  text-shadow: 1px 1px 0 darken(@baseColor, 10%);
+}
+
+// ---------------------------------------------------------
+// SPOTLIGHTS
+// ---------------------------------------------------------
+
+.ja-sl {
+  padding-bottom: @baseLineHeight * 2;
+  padding-top: @baseLineHeight * 2;
+  // /.clearfix();
+}
+
+// Spotlight 1
+// -----------
+.ja-sl-1 {
+  background: @topslBackground;
+  color: @topslTextColor;
+}
+
+.ja-sl-1 .module {
+  background: transparent;
+  border-left: 1px solid lighten(@topslBackground, 10%);
+  color: @white;
+  margin-bottom: 0;
+  margin-left: -16px;
+  padding-left: 16px;
+  text-align: center;
+  text-shadow: -1px -1px 0 darken(@topslBackground, 5%);
+}
+
+.ja-sl-1 .item-first .module {
+  border-left: 0;
+}
+
+.ja-sl-1 .module .module-title {
+  color: @white;
+}
+
+.ja-sl-1 h3.sl-title {
+  border-bottom: 1px solid lighten(@topslBackground, 10%);
+  text-shadow: -1px -1px 0 darken(@topslBackground, 10%);
+  color: @topslTextColor;
+  margin: 0 0 @baseLineHeight 0;
+  padding: 0 0 @baseLineHeight * 2;
+  line-height: 1;
+  text-align: center;
+}
+
+.ja-sl-1 .module .module-inner {
+  background: transparent;
+}
+
+.ja-sl-1 .module h4 {
+  color: @topslTextColor;
+}
+
+.ja-sl-1 .module p.readmore {
+  margin: 0;
+}
+
+.ja-sl-1 .module p.readmore a {
+  background: url(../images/readmore-bg.png) no-repeat left top;
+  color: @topslLinkColor;
+  display: inline-block;
+  height: 40px;
+  text-indent: -999em;
+  width: 40px;
+}
+
+.ja-sl-1 .module p.readmore a:hover,
+.ja-sl-1 .module p.readmore a:focus,
+.ja-sl-1 .module p.readmore a:active {
+  background-position: left bottom;
+  color: @topslLinkColorHover;
+}
+
+.ja-sl-1 .module a {
+  color: @topslLinkColor;
+}
+
+.ja-sl-1 .module a:hover,
+.ja-sl-1 .module a:focus,
+.ja-sl-1 .module a:active {
+  color: @topslLinkColorHover;
+}
+
+// Spotlight 2
+// -----------
+.ja-sl-2 {
+  text-align: center;
+}
+
+.ja-sl-2 .module {
+  background: transparent;
+  margin-bottom: 0;
+}
+
+.ja-sl-2 .module .module-inner {
+  background: transparent;
+}
+
+.ja-sl-2 .module .module-ct h3 {
+  font-family: 'robotoregular';
+  font-weight: normal;
+  line-height: @baseLineHeight;
+}
+
+.ja-sl-2 .module p.intro {
+  color: @grayLight;
+}
+
+// Spotlight 3
+// -----------
+.ja-sl-3 {
+  background: #f5f5f5;
+  border-top: 1px solid darken(@grayLighter, 5%);
+  padding-bottom: 0;
+}
+
+.ja-sl-3 .container {
+  border-bottom: 1px solid darken(@grayLighter, 5%);
+}
+
+.ja-sl-3 .module {
+  background: transparent;
+}
+
+.ja-sl-3 .module .module-inner {
+  background: transparent;
+}
+
+// Spotlight 4
+// -----------
+.ja-sl-4 {
+  background: #f5f5f5;
+}
+
+.ja-sl-4 .module {
+  background: transparent;
+  margin-bottom: 0;
+}
+
+.ja-sl-4 .module .module-inner {
+  background: transparent;
+}
+
+// Spotlight 5
+// -----------
+.ja-sl-5 {
+  background-color: @grayDarker;
+  border-top: 1px solid @gray;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ja-sl-5 .container {
+  border-bottom: 1px solid #333;
+  padding: @baseLineHeight 0;
+}
+
+.ja-sl-5 .module {
+  background: transparent;
+  margin-bottom: 0;
+}
+
+.ja-sl-5 .module .module-inner {
+  background: transparent;
+}
+
+.ja-sl-5 a {
+  color: @linkColor;
+}
+
+.ja-sl-5 a:hover,
+.ja-sl-5 a:focus,
+.ja-sl-5 a:active {
+  color: @linkColorHover;
+}
+
+.ja-sl-5 div.jumbotron h3 {
+  color: @white;
+}
+
+// Spotlight 6
+// -----------
+.ja-sl-6 {
+  background-color: @grayDarker;
+  color: @gray;
+  padding: 0;
+  text-shadow: 0px 0px 2px darken(@grayDarker, 10%);
+}
+
+.ja-sl-6 .container {
+  border-bottom: 1px solid #333;
+  padding: @baseLineHeight 0;
+}
+
+.ja-sl-6 .module {
+  background: transparent;
+  margin-bottom: 0;
+}
+
+.ja-sl-6 .module .module-inner {
+  background: transparent;
+}
+
+.ja-sl-6 .module-title {
+  background: transparent;
+  color: @white;
+}
+
+
+
+// ---------------------------------------------------------
+// MAIN BODY
+// ---------------------------------------------------------
+.ja-mainbody {
+  padding-bottom: @baseLineHeight*2;
+  padding-top: @baseLineHeight*2;
+}
+
+// Content
+// -------
+.ja-content {
+}
+
+// Sidebars
+// --------
+.ja-sidebar {
+}
+
+.ja-sidebar-1 {
+}
+
+.ja-sidebar-2 {
+}
+
+
+
+// ---------------------------------------------------------
+// FOOTER
+// ---------------------------------------------------------
+
+.ja-footer {
+  background: @grayDarker;
+  color: @gray;
+  .clearfix();
+  // small
+  small {
+    display: block;
+    font-size: 100%; //Use global footer font size.
+  }
+  // links
+  a {
+    color: @T3FooterModuleColor;
+  }
+  a:hover, a:active, a:focus {
+    color: lighten(@gray,50%);
+  }
+}
+
+// Foot Nav
+// --------
+.ja-footnav {
+  background: @grayDarker;
+  font-size: @T3smallerFontSize;
+  padding: (@baseLineHeight * 2) 0 0;
+  .clearfix();
+}
+
+.ja-footnav ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+.ja-footnav li {
+  border-right: 1px solid #333;
+  display: inline-block;
+  padding: 0 (@baseLineHeight / 2);
+  line-height: 1;
+}
+
+.ja-footnav li:first-child {
+  padding-left: 0;
+}
+
+.ja-footnav li:last-child {
+  border-right: 0;
+}
+
+.ja-footnav li a {
+  .transition(0.5s);
+}
+
+.ja-footnav li a:hover,
+.ja-footnav li a:focus,
+.ja-footnav li a:active {
+  background: none;
+  color: @linkColorHover;
+  text-decoration: underline;
+}
+
+
+// Copyright
+// ---------
+.ja-copyright {
+  font-size: @T3smallerFontSize;
+  padding: (@baseLineHeight / 2) 0 (@baseLineHeight * 2);
+  .clearfix();
+  text-align: center;
+}
+
+
+// ---------------------------------------------------------
+// MISC.
+// ---------------------------------------------------------
+
+// Social list
+// --------
+ul.social-list {
+  display: block;
+  margin: 10px 0 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.social-list li {
+  display: block;
+  float: left;
+  padding: 5px 0;
+  width: 50%;  
+}
+
+ul.social-list li a {
+  color: @gray;
+  display: block;
+  width: 100%;
+}
+
+ul.social-list li a:hover,
+ul.social-list li a:focus,
+ul.social-list li a:active {
+  color: @linkColorHover;
+  text-decoration: none;
+}
+
+ul.social-list li a span {
+  background-image: url(../images/social-list.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  width: 20px;
+}
+
+ul.social-list li.facebook a span {
+  background-position: 0px 0px;
+}
+
+ul.social-list li.facebook a:hover span {
+  background-position: -20px 0px;
+}
+
+ul.social-list li.flickr a span {
+  background-position: 0px -20px;
+}
+
+ul.social-list li.flickr a:hover span {
+  background-position: -20px -20px;
+}
+
+ul.social-list li.twitter a span {
+  background-position: 0px -40px;
+}
+
+ul.social-list li.twitter a:hover span {
+  background-position: -20px -40px;
+}
+
+ul.social-list li.feed a span {
+  background-position: 0px -60px;
+}
+
+ul.social-list li.feed a:hover span {
+  background-position: -20px -60px;
+}
+
+
+// Newsletter
+// --------
+div.acymailing_module div.acymailing_introtext {
+  margin-bottom: 10px !important;
+}
+
+div.acymailing_form {
+  overflow: hidden;
+}
+
+div.acymailing_form p {
+  float: left;
+}
+
+div.acymailing_form p.onefield {
+  width: 65%;
+}
+
+div.acymailing_form p.onefield .inputbox {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: ( @baseLineHeight * 1.5 );
+  padding: 5px 10px;
+  width: 100%;
+}
+
+div.acymailing_form p.acysubbuttons {
+  width: 35%;
+}
+
+div.acymailing_form p.acysubbuttons .button {
+  background: #1a1a1a !important;
+  border: 1px solid #333;
+  border-left: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: none;
+  color: @white;
+  display: block;
+  font-size: @T3smallFontSize;
+  font-weight: bold;
+  height: ( @baseLineHeight * 1.5 );
+  padding: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+div.acymailing_module a.modal,
+div.acymailing_module a.acymailing_togglemodule{
+  background: #444;
+  border: 0;
+  color: #999;
+  display: block;
+  top: auto;
+  left: 0;
+  margin: 0;
+  padding: 5px 0px;
+  position: relative;
+  width: auto;
+  text-align: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-decoration:none;
+  font-size: @baseFontSize;
+}
+div.acymailing_module a.modal:hover,
+div.acymailing_module a.acymailing_togglemodule:hover{
+  background: @baseColor;
+  color: #fff;
+}
+
+.com_acymailing div.acymailing_form p.onefield .inputbox:focus{
+  color: darken(@white,10%);
+}
+
+// Contact us
+// -------------
+div.contact h3 {
+  font-family: @fontFaceBold;
+  font-size: (@baseFontSize + 10);
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+div.contact fieldset {
+  border: 1px solid #ddd;
+  padding: @baseLineHeight;
+  .border-radius(3px);
+}
+
+div.contact fieldset legend {
+  background: @white;
+  border: 0;
+  color: @grayLight;
+  font-size: @baseFontSize;
+  margin-bottom: 0;
+  width: auto;
+}
+
+legend + .control-group {
+  margin-top: 0;
+}
+
+div.contact-miscinfo .dl-horizontal {
+  margin-bottom: 0;
+}
+
+.form-horizontal .control-label label {
+  font-weight: bold;
+}
+
+div.contact .form-actions {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+// About us page
+// -------------
+.personal-info {
+  text-align: center;
+  margin-bottom: ( @baseLineHeight * 2 );
+}
+
+.personal-info img {
+  margin-bottom: 5px;
+  .border-radius(3px);
+}
+
+.personal-info h3 {
+  font-family: 'robotobold';
+  font-weight: normal;
+  font-size: (@baseFontSize + 2);
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.personal-info span.job-title {
+  color: @grayLight;
+}
+
+.personal-info p {
+  border-top: 1px solid @grayLighter;
+  border-bottom: 1px solid @grayLighter;
+  margin: (@baseLineHeight / 2) 0;
+  padding: (@baseLineHeight / 2) 0;
+}
+
+.personal-info ul {
+  margin: 0;
+  paddign: 0;
+  list-style: none;
+  text-align: center;
+}
+
+div.personal-info ul > li {
+  background: none;
+  border: 0 !important;
+  display: inline-block;
+  height: 16px;
+  margin: 0 5px;
+  padding: 0 !important;
+  width: 16px;
+}
+
+.personal-info ul li a {
+  background-image: url(../images/personal-socials.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 16px;
+  width: 16px;
+  text-indent: -999em;
+  .transition(0.5s);
+}
+
+.personal-info ul li.facebook a {
+  background-position: 0px 0px;
+}
+
+.personal-info ul li.facebook a:hover {
+  background-position: -16px 0px;
+}
+
+.personal-info ul li.skype a {
+  background-position: 0px -16px;
+}
+
+.personal-info ul li.skype a:hover {
+  background-position: -16px -16px;
+}
+
+.personal-info ul li.twitter a {
+  background-position: 0px -32px;
+}
+
+.personal-info ul li.twitter a:hover {
+  background-position: -16px -32px;
+}
+
+.personal-info ul li.vimeo a {
+  background-position: 0px -48px;
+}
+
+.personal-info ul li.vimeo a:hover {
+  background-position: -16px -48px;
+}
+
+.personal-info ul li.youtube a {
+  background-position: 0px -64px;
+}
+
+.personal-info ul li.youtube a:hover {
+  background-position: -16px -64px;
+}
+
+// About us
+// --------
+.author-avt {
+  display: block;
+  float: left;
+  height: 62px;
+  margin-right: (@baseLineHeight / 2);
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+  width: 62px;
+}
+
+img.author-avt {
+  position: absolute;
+  width: 62px;
+  z-index: 10;
+}
+
+.author-avt .mask {
+  background: url(../images/avt-mask.png) no-repeat left top;
+  display: block;
+  height: 62px;
+  position: relative;
+  width: 62px;
+  z-index: 20;
+}
+
+// Login page
+// ----------
+div.quick-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.quick-links ul li {
+  display: inline;
+  padding: 0 5px;
+}
+
+// Smart search page
+// -----------------
+#search-form #finder-search fieldset.word {
+  margin-bottom: 20px;
+}
+
+#search-form #finder-search .input,
+#search-form #finder-search .inputbox {
+  margin-bottom: 10px;
+	vertical-align: top;
+}
+
+#search-form #finder-search .button {
+  border: 1px solid darken(@baseColor, 20%);
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 10px;
+  vertical-align: middle;
+  .buttonBackground(lighten(@baseColor, 10%), @baseColor, #fff, 1px 1px 0 darken(@baseColor, 10%));
+  .border-radius(3px);
+  .box-shadow(inset -1px 1px 0 lighten(@baseColor, 15%));
+}
+
+#search-form #finder-search .button:hover {
+  background-position: 0 -15px;
+  .buttonBackground(lighten(@baseColor, 10%), @baseColor, #fff, 1px 1px 0 darken(@baseColor, 10%));
+  .transition(background-position .1s linear);
+}
+
+#finder-filter-window ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#finder-filter-window ul li label {
+  color: @grayLight;
+  font-weight: bold;
+}
+
+.search .only .checkbox {
+  display: inline-block;
+}
+
+.search .only .checkbox input[type="checkbox"] {
+  vertical-align: middle;
+  margin-top: 2px;
+}
+
+// Registration form
+// -----------------
+table.admintable td #genderm,
+table.admintable td #genderm-lbl,
+table.admintable td #genderf,
+table.admintable td #genderf-lbl {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+table.admintable td #genderm,
+table.admintable td #genderf {
+  margin-top: 0;
+}
+
+table.admintable td #genderm-lbl,
+table.admintable td #genderf-lbl {
+  margin-bottom: 0;
+	margin-right: 5px;
+	padding-top: 0;
+	
+	#genderm, #genderf {
+		margin-top: 3px !important;
+	}
+}
+
+#del_image {
+  float: left;
+  margin-right: 5px;
+}
+
+// Language Switcherload
+.mod-languages {
+  text-align: right;
+}
+
+// Thumbnails
+.manager.thumbnails > li {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+}
+
+// Recaptcha
+// ---------------------------------------------------------
+#recaptcha_area {
+	max-width: 200px;
+}

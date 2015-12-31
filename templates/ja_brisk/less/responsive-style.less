@@ -1,0 +1,594 @@
+//
+// TABLET
+// -------------------------------------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+  .head-search .input {
+    width: 90px !important;
+  }
+
+  ul.social-list li {
+    width: 100%;
+  }
+	
+  // CONTACT PAGE
+  // ------------
+  div.contact {
+    .thumbnail {
+      float: none;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+	
+	// K2
+	// --------
+	table.calendar tr td {
+    padding: 5px 2px;
+	}
+}
+
+
+
+//
+// MOBILE
+// -------------------------------------------------------------
+@media (max-width: 767px) {
+
+  /* HEADER
+  --------------------------------------------------------- */
+  /* Logo ---*/
+  .logo { float: none; text-align: center; }
+
+  /* Head Search --- */
+  .head-search {
+    float: none;
+  }
+
+  .head-search .input {
+    width: 100%;
+  }
+
+  /* focus state */
+  .head-search .input:focus {
+    width: 100%;
+  }
+
+  // -------------------------------------------------------
+  //  JA MAIN MENU
+  // -------------------------------------------------------
+
+  .t3-mainnav {
+    float: none;
+  }
+
+  .container.ja-mainbody {
+  margin-top: 40px;
+}
+
+  /* SLIDESHOW
+  --------------------------------------------------------- */
+  .ja-slideshow .container {
+    padding-top: 0;
+    margin-top: 170px;
+  }
+
+  .ja-slideshow .ja-ss-desc {
+    bottom: 40px;
+  }
+
+  .ja-slideshow .ja-ss-desc h2 {
+    font-size: 3em;
+  }
+
+  .ja-slideshow .ja-ss-desc h3 {
+    margin-bottom: 0;
+  }
+
+  .ja-slideshow .ja-ss-desc a.btn {
+    padding: 15px 30px;
+  }
+
+  /* SPOTLIGHTS
+  --------------------------------------------------------- */
+  .ja-sl {
+    padding-bottom: @baseLineHeight;
+    padding-top: @baseLineHeight;
+  }
+
+  .ja-sl-1 .module,
+  .ja-sl-1 .t3-module {
+    background: none;
+    border: none;
+    margin-bottom: @baseLineHeight;
+  }
+
+  /* HOME SPOTLIGHTS
+  --------------------------------------------------------- */
+  /* Spotlight 1 + 5 ---*/
+  .home .ja-sl-1,
+  .home .ja-sl-5 {
+    margin-left: -20px;
+    margin-right: -20px;
+    //jumbotron
+    .jumbotron {
+      padding-top: 30px;
+      padding-bottom: 10px;
+      //jumbotron btn
+      .btn-large {
+        font-size: @baseFontSize + 2;
+        padding: (@baseFontSize - 2px) (@baseFontSize + 2px);
+      }
+    }
+  }
+
+  /* Spotlight 2 ---*/
+  .home .ja-sl-2 {
+    text-align: center;
+    p {
+      font-size: @baseFontSize;
+      line-height: @baseLineHeight;
+    }
+  }
+
+  /* Spotlight 3 & 4 ---*/
+  .home .ja-sl-3 p img {
+    margin-bottom: 0;
+    margin-top: @baseLineHeight;
+  }
+
+  .home .ja-sl-3,
+  .home .ja-sl-4 {
+    p {
+      font-size: @baseFontSize;
+      line-height: @baseLineHeight;
+    }
+
+    //jumbotron
+    .jumbotron {
+      padding-bottom: 0;
+      h1 {
+        margin-bottom: @baseLineHeight / 2;
+        margin-top: @baseLineHeight / 2;
+      }
+      p {
+        font-size: @baseFontSize;
+      }
+    }
+  }
+
+  /* FOOTER
+  --------------------------------------------------------- */
+  .ja-footer {
+  }
+
+  /* Footnav ---*/
+  .ja-footnav {
+    padding: @baseLineHeight 20px 0;
+    font-size: @T3smallerFontSize;
+  }
+
+  .ja-footnav .module-title {
+    font-size: @baseFontSize;
+    font-weight: bold;
+  }
+
+  /* Copyright ---*/
+  .ja-copyright {
+    padding: @baseLineHeight 20px (@baseLineHeight * 2);
+    .clearfix();
+  }
+
+  .copyright,
+  .poweredby {
+    float: none;
+  }
+
+  .poweredby {
+    margin-top: @baseLineHeight / 2;
+  }
+
+  //Masshead
+  //--------
+  .ja-masshead {
+    margin: 100px 0 -40px;
+    padding: 0;
+  }
+
+  .ja-masshead h3 {
+    font-size: 30px;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  ul.social-list li {
+    width: auto;
+  }
+  
+  ul.social-list li a strong {
+    display: none;
+  }
+
+  //JA Slideshow
+  div.ja-ss-desc p {
+    display: none;
+  }
+
+  .ja-ss-items .ja-ss-item img {
+    width: 50%;
+  }
+
+  //Contact page
+  .contact .thumbnail {
+    display: none;
+  }
+
+  .ja-header .span8,
+  .ja-header .span2 {
+    float: left;
+    margin-left: 0;
+  }
+
+  .ja-header .ja-logo {
+    margin-left: 0;
+    left: 75px;
+    position: absolute;
+    width: auto;
+  }
+
+  .ja-header .ja-search {
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    width: auto;
+  }
+
+  .ja-header .ja-search .head-search {
+    margin-top: 17px;
+  }
+
+  .ja-header .t3-mainnav {
+    border-top: 0;
+  }
+
+  .head-search .input,
+  .head-search .input:focus {
+    width: 100px;
+  }
+
+  .ja-header .languageswitcherload {
+    bottom: 5px;
+    float: right;
+    position: absolute;
+    right: 20px;
+    width: 100%;
+  }
+
+  // Slideshow
+  // ---------
+  .ja-ss-thumbs {
+    margin-left: 0 !important;
+  }
+
+  .ja-sl-1,
+  .ja-sl-2,
+  .ja-sl-3,
+  .ja-sl-4,
+  .ja-sl-5,
+  .ja-sl-6 {
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ja-footer,
+  .ja-footnav {
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+
+// MOBILE LANDSCAPE
+//--------------------------------------------
+@media (max-width: 480px) {
+  // Sidebars
+  // --------
+  .ja-sidebar {
+    clear: both;
+  }
+
+  //JA Slideshow
+  //------------
+  div.ja-ss-desc p {
+    display: none;
+  }
+
+  div.ja-ss-desc h2 {
+    font-size: (@baseFontSize + 15);
+  }
+
+  div.ja-ss-desc h3 {
+    font-size: (@baseFontSize + 5);
+    margin-bottom: 0;
+  }
+
+  div.ja-ss-desc a.btn-large {
+    padding: (@baseLineHeight / 2);
+  }
+
+  //Masshead
+  //---------  
+  .ja-masshead {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ja-content {
+    margin-bottom: 20px;
+  }
+
+  //Spotlight
+  //---------
+  .ja-sl-1,
+  .ja-sl-3,
+  .ja-sl-4,
+  .ja-sl-5,
+  .ja-sl-6,
+  .ja-footnav {
+    margin: 0 -(@baseLineHeight);
+    padding: @baseLineHeight;
+  }
+
+  div.all-partner .span2 {
+    text-align: center;
+  }
+
+  ul.social-list li a strong {
+    display: inline;
+  }
+
+  .ja-footer {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  //Contact page
+  //------------
+  div.contact h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  div.contact fieldset legend {
+    line-height: 1.5;
+  }
+
+  div.contact fieldset .control-group:nth-child(6) .control-label {
+    float: left;
+    margin-right: 5px;
+  }
+
+  div.contact fieldset .control-group:nth-child(6) .controls {
+    float: left;
+  }
+
+  div.contact fieldset .control-group:nth-child(6) .controls input {
+    margin-top: 0;
+  }
+
+  //Login form
+  //----------
+  .login_form fieldset,
+  .login fieldset {
+    padding: 20px;
+  }
+
+  //About us
+  //--------
+  .memebers-info .span3 {
+    float: left;
+    width: 50%;
+  }
+
+  .memebers-info .span3:nth-child(2*n) {
+    padding-right: 10px;
+  }
+
+  .memebers-info .span3:nth-child(2*n+1) {
+    padding-left: 10px;
+  }
+
+  //Pricing table
+  //-------------
+  .pricing-table .four-cols .col {
+    border: 1px solid #ddd;
+    border-bottom: 0px;
+    width: 100%;
+    .border-radius(0px);
+  }
+
+  .pricing-table .col-last {
+    border-bottom: 1px solid #ddd !important;
+    .border-bottom-radius(3px);
+  }
+
+  .pricing-table .col-header {
+    border-left: 0;
+    border-right: 0;
+    height: auto;
+    .border-radius(0px);
+  }
+
+  .pricing-table .featured .col-header {
+    height: auto;
+    margin-top: 0;
+  }
+
+  .pricing-table .col-last .col-header {
+    border-right: 0;
+  }
+
+  .pricing-table ul li {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .pricing-table .col-last ul li {
+    border-right: 0;
+  }
+
+  .pricing-table .col-footer,
+  .pricing-table .col-last .col-footer {
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    height: auto;
+  }
+
+  .pricing-table .featured .col-footer {
+    border: 0;
+    height: auto;
+    margin-bottom: 0;
+    .border-radius(0px);
+  }
+
+  //K2
+  //--------
+  div.componentheading {
+    font-size: 20px;
+  }
+
+  div.tagItemView {
+    float: none;
+  }
+
+  
+  .ja-masshead {
+    margin-top: 100px !important;
+    margin-bottom: -40px !important;
+  }
+
+  .ja-masshead h3 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}
+
+// MOBILE PORTRAIT
+//--------------------------------------------
+@media (max-width: 479px) {
+  .ja-header {
+  }
+
+  //Slideshow
+  //--------- 
+  .ja-slideshow .container {
+    padding-top: 10px;
+  }
+
+  //Masshead
+  //--------
+  .ja-masshead {
+    margin: 0 -20px;
+    padding: 0 @baseLineHeight;
+  }
+
+  .ja-content {
+    margin-bottom: 20px;
+  }
+
+  div.ja-ss-desc {
+    display: none;
+  }
+
+  .ja-ss-items .ja-ss-item img {
+    width: 100%;
+  }
+
+  .ja-navhelper {
+    display: none;
+  }
+
+  //About us
+  .memebers-info .span3 {
+    float: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  ul.social-list li a strong {
+    display: none;
+  }
+
+  .ja-sl-1 .module {
+    border: 0 !important;
+    margin-bottom: 30px;
+  }
+
+    //Smart search
+  //------------
+  #search-form #finder-search .inputbox {
+    width: 60%;
+  }
+
+  div.search #search-searchword {
+    width: 200px;
+  }
+
+  //K2
+  //---------
+  div.itemIntroText img,
+  div.catItemIntroText img,
+  div.genericItemIntroText img,
+  div.latestItemIntroText img,
+  div.tagItemIntroText img,
+  div.userItemIntroText img {
+    border: 0;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%;
+  }
+
+  div.itemHeader h2.itemTitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  span.itemImage img {
+    width: 100%;
+  }
+
+  div.itemNavigation a.itemPrevious,
+  div.itemNavigation a.itemNext {
+    width: 100%;
+  }
+
+  div.itemCommentsForm form textarea.inputbox,
+  div.itemCommentsForm form input.inputbox {
+    width: 90%;
+  }
+
+  div.itemComments ul.itemCommentsList li {
+    padding-left: 0;
+  }
+
+  div.itemComments ul.itemCommentsList li .user-avatar {
+    display: none;
+  }
+
+  div.itemComments ul.itemCommentsList li .comment-inner span.arrow {
+    display: none;
+  }
+
+  .k2AccountPage table.admintable td input.inputbox  {
+    width: 45%;
+  }
+
+}

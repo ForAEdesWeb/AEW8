@@ -1,0 +1,97 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package   T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license   GNU General Public License; http://www.gnu.org/licenses/gpl.html
+ * @author    JoomlArt, JoomlaBamboo 
+ *            If you want to be come co-authors of this project, please follow 
+ *            our guidelines at http://t3-framework.org/contribute
+ *------------------------------------------------------------------------------
+ */
+
+// Template-Responsive.less
+// For phone and tablet devices
+// -------------------------------------------------------------
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+@import "../../../plugins/system/t3/base/less/off-canvas.less";
+
+#off-canvas-nav {
+  .t3-mainnav {
+    width: @T3OffCanvasWidth !important;
+    border-right: solid 1px #ddd;
+  }
+
+  .t3-mainnav .nav-collapse {
+    margin-top: 0;
+    top: 0 !important;
+    padding: 0 !important;
+  }
+
+  .t3-mainnav .nav-collapse .nav > li > a,
+  .t3-mainnav .nav-collapse .dropdown-menu a {
+    background: #fff;
+    border-bottom: 1px solid @grayLighter;
+    color: @grayDark;
+    padding-left: 20px;
+  }
+
+  .t3-mainnav .nav-collapse .nav > li > a:hover,
+  .t3-mainnav .nav-collapse .dropdown-menu a:hover {
+    background: #fff;
+    color: @linkColorHover;
+  }
+
+  .t3-mainnav .nav-collapse .dropdown-menu a {
+    background: @white;
+    border-top: 0;
+    border-bottom: 1px solid @grayLighter;
+    display: block;
+    padding-left: 20px;
+  }
+
+  .t3-mainnav .nav li.dropdown > .dropdown-menu .active > .nav-child .active a,
+  .t3-mainnav .nav li.dropdown > .dropdown-menu .active > .nav-child a:hover,
+  .t3-mainnav .nav li.dropdown > .dropdown-menu .active > a {
+    color: @linkColor;
+  }
+
+  // Mega group
+  // -----------
+  .t3-megamenu .mega-inner {
+    padding: 0;
+  }
+
+  .t3-megamenu .row-fluid + .row-fluid {
+    border-top: 0;
+  }
+
+  .t3-megamenu .mega-nav .mega-group > .mega-group-title,
+  .t3-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title,
+  .t3-megamenu .dropdown-menu .active .mega-nav .mega-group > .mega-group-title {
+    font-size: @baseFontSize;
+    text-transform: none;
+  }
+
+  .t3-megamenu .mega-group .mega-nav > li,
+  .t3-megamenu .dropdown-menu .mega-group .mega-nav > li {
+    padding: 0;
+  }
+
+  .t3-megamenu .mega-group .mega-nav > li a,
+  .t3-megamenu .dropdown-menu .mega-group .mega-nav > li a,
+  .t3-megamenu .dropdown-menu .mega-nav li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .t3-megamenu .dropdown-menu .mega-nav .mega-nav li > a {
+    padding-left: 30px !important;
+  }
+
+}

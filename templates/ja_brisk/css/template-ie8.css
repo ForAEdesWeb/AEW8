@@ -1,0 +1,31 @@
+
+
+/* JA Main menu ---*/
+.t3-mainnav .nav .dropdown .nav-child .nav-child {
+  border: 0 !important;
+}
+
+/* Login form */
+#form-login-username .input-prepend .input,
+#form-login-password .input-prepend .input {
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: block;
+  float: left;
+}
+
+.breadcrumb li {
+  display: block;
+  float: left;
+}
+
+.breadcrumb li a,
+.breadcrumb li span {
+  display: block;
+  float: left;
+}

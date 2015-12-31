@@ -1,0 +1,267 @@
+.ja-ss-wrap.fade {
+  opacity: 1;
+}
+.ja-ss-slideshow {
+  position: relative;
+  height: 309px;
+}
+.ja-ss-loading:before {
+  content: "";
+  display: block;
+  background: url(../../../images/slideloading.gif) no-repeat center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 21;
+}
+.ja-ss-wrap {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.ja-ss-items {
+  width: 100%;
+}
+.ja-ss-item {
+  background: #fff;
+  display: block;
+  float: right;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 260px;
+  z-index: 10;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.ja-ss-item img {
+  background: #fff;
+  float: left;
+  width: 50%;
+}
+.ja-ss-item img:hover {
+  cursor: pointer;
+}
+.ja-ss-item.prev {
+  display: block;
+}
+.ja-ss-item.next {
+  display: block;
+}
+.ja-ss-item.curr {
+  
+  z-index: 20;
+}
+.ja-ss-mask {
+  background: none;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 800ms cubic-bezier(0.260,0.860,0.440,0.985);
+  -moz-transition: all 800ms cubic-bezier(0.260,0.860,0.440,0.985);
+  -ms-transition: all 800ms cubic-bezier(0.260,0.860,0.440,0.985);
+  -o-transition: all 800ms cubic-bezier(0.260,0.860,0.440,0.985);
+  transition: all 800ms cubic-bezier(0.260,0.860,0.440,0.985);
+}
+.ja-ss-mask.active {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.ja-ss-desc {
+  right: 0;
+  position: absolute;
+  top: 0;
+  
+  -webkit-box-sizing: border-box;
+  
+  -moz-box-sizing: border-box;
+  
+  box-sizing: border-box;
+  width: 50%;
+}
+.ja-ss-desc h2 {
+  font-size: 5.538em;
+  margin: 0 0 5px;
+  padding: 0;
+  line-height: 1;
+}
+.ja-ss-desc h3 {
+  color: #999;
+  line-height: normal;
+  font-size: 1.846em;
+  font-weight: normal;
+  overflow: visible;
+  margin: 0 0 10px;
+}
+.ja-ss-desc h3 a {
+  color: inherit;
+  line-height: normal;
+  text-decoration: none;
+}
+.ja-ss-desc a.btn {
+  border: 1px solid #223300;
+  font-weight: bold;
+  padding: 20px 40px;
+  margin: 0;
+  vertical-align: middle;
+  color: #fff;
+  text-shadow: 1px 1px 0 #446600;
+  background-color: #7ab800;
+  background-image: -moz-linear-gradient(top,#88cc00,#669900);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#88cc00),to(#669900));
+  background-image: -webkit-linear-gradient(top,#88cc00,#669900);
+  background-image: -o-linear-gradient(top,#88cc00,#669900);
+  background-image: linear-gradient(to bottom,#88cc00,#669900);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff87cc00', endColorstr='#ff669900', GradientType=0);
+  border-color: #669900 #669900 #334d00;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  
+  *background-color: #669900;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset -1px 1px 0 #99e600;
+  -moz-box-shadow: inset -1px 1px 0 #99e600;
+  box-shadow: inset -1px 1px 0 #99e600;
+}
+.ja-ss-desc a.btn:hover,
+.ja-ss-desc a.btn:focus,
+.ja-ss-desc a.btn:active,
+.ja-ss-desc a.btn.active,
+.ja-ss-desc a.btn.disabled,
+.ja-ss-desc a.btn[disabled] {
+  color: #fff;
+  background-color: #669900;
+  *background-color: #558000;
+}
+.ja-ss-desc a.btn:active,
+.ja-ss-desc a.btn.active {
+  background-color: #446600 \9;
+}
+.ja-ss-desc a.btn:hover,
+.ja-ss-desc a.btn:focus,
+.ja-ss-desc a.btn:active {
+  color: #fff;
+  text-shadow: 1px 1px 0 #446600;
+  background-color: #74ad00;
+  background-image: -moz-linear-gradient(top,#669900,#88cc00);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#669900),to(#88cc00));
+  background-image: -webkit-linear-gradient(top,#669900,#88cc00);
+  background-image: -o-linear-gradient(top,#669900,#88cc00);
+  background-image: linear-gradient(to bottom,#669900,#88cc00);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff669900', endColorstr='#ff87cc00', GradientType=0);
+  border-color: #88cc00 #88cc00 #558000;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  
+  *background-color: #88cc00;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.ja-ss-desc a.btn:hover:hover,
+.ja-ss-desc a.btn:hover:focus,
+.ja-ss-desc a.btn:hover:active,
+.ja-ss-desc a.btn:hover.active,
+.ja-ss-desc a.btn:hover.disabled,
+.ja-ss-desc a.btn:hover[disabled],
+.ja-ss-desc a.btn:focus:hover,
+.ja-ss-desc a.btn:focus:focus,
+.ja-ss-desc a.btn:focus:active,
+.ja-ss-desc a.btn:focus.active,
+.ja-ss-desc a.btn:focus.disabled,
+.ja-ss-desc a.btn:focus[disabled],
+.ja-ss-desc a.btn:active:hover,
+.ja-ss-desc a.btn:active:focus,
+.ja-ss-desc a.btn:active:active,
+.ja-ss-desc a.btn:active.active,
+.ja-ss-desc a.btn:active.disabled,
+.ja-ss-desc a.btn:active[disabled] {
+  color: #fff;
+  background-color: #88cc00;
+  *background-color: #77b300;
+}
+.ja-ss-desc a.btn:hover:active,
+.ja-ss-desc a.btn:hover.active,
+.ja-ss-desc a.btn:focus:active,
+.ja-ss-desc a.btn:focus.active,
+.ja-ss-desc a.btn:active:active,
+.ja-ss-desc a.btn:active.active {
+  background-color: #669900 \9;
+}
+.ja-ss-btns {
+  z-index: 900;
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+}
+.ja-ss-btns span {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  float: right;
+  margin-left: 5px;
+  padding: 2px 5px;
+}
+.ja-ss-thumbs-wrap {
+  height: 20px;
+  width: 100%;
+  clear: both;
+  position: relative;
+  bottom: 20px;
+  overflow: hidden;
+  z-index: 101;
+}
+.ja-ss-thumbs {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.ja-ss-thumbs div {
+  background: url(../../../images/sl-nav-bg.png) no-repeat right top;
+  color: #191a1b;
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  margin: 0 0 0 5px;
+  padding: 0;
+  line-height: 1;
+  overflow: hidden;
+  width: 10px;
+}
+.ja-ss-thumbs div img {
+  display: none;
+  opacity: 0.3;
+}
+.ja-ss-thumbs div:hover {
+  background-position: right bottom;
+}
+.ja-ss-thumbs div.active {
+  background-position: 0px -10px;
+  color: #CF4E33;
+}
+.ja-ss-thumbs div.active img {
+  opacity: 1;
+}
+.ja-ss-thumbs div {
+  background: url(../../../images/themes/green/sl-nav-bg.png) no-repeat right top;
+}

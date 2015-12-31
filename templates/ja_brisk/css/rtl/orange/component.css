@@ -1,0 +1,103 @@
+body {
+  border: 0;
+}
+#ja-mainbody {
+  margin: 0;
+  padding: 10px 0;
+}
+#ja-mainbody .ja-content {
+  padding: 20px;
+}
+#ja-mainbody #mailtoForm .inputbox {
+  width: 50%;
+}
+#mailtoForm p .button {
+  border: 1px solid #666666;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 10px;
+  vertical-align: middle;
+  color: #fff;
+  text-shadow: 1px 1px 0 #808080;
+  background-color: #a8a8a8;
+  background-image: -moz-linear-gradient(top,#b3b3b3,#999);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#b3b3b3),to(#999));
+  background-image: -webkit-linear-gradient(top,#b3b3b3,#999);
+  background-image: -o-linear-gradient(top,#b3b3b3,#999);
+  background-image: linear-gradient(to bottom,#b3b3b3,#999);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb2b2b2', endColorstr='#ff999999', GradientType=0);
+  border-color: #999 #999 #737373;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  
+  *background-color: #999;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset -1px 1px 0 #bfbfbf;
+  -moz-box-shadow: inset -1px 1px 0 #bfbfbf;
+  box-shadow: inset -1px 1px 0 #bfbfbf;
+}
+#mailtoForm p .button:hover,
+#mailtoForm p .button:focus,
+#mailtoForm p .button:active,
+#mailtoForm p .button.active,
+#mailtoForm p .button.disabled,
+#mailtoForm p .button[disabled] {
+  color: #fff;
+  background-color: #999;
+  *background-color: #8c8c8c;
+}
+#mailtoForm p .button:active,
+#mailtoForm p .button.active {
+  background-color: #808080 \9;
+}
+#mailtoForm p .button:hover {
+  border: 1px solid #803f00;
+  color: #fff;
+  text-shadow: 1px 1px 0 #b35800;
+  background-color: #f58010;
+  background-image: -moz-linear-gradient(top,#ff8b1a,#e67100);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#ff8b1a),to(#e67100));
+  background-image: -webkit-linear-gradient(top,#ff8b1a,#e67100);
+  background-image: -o-linear-gradient(top,#ff8b1a,#e67100);
+  background-image: linear-gradient(to bottom,#ff8b1a,#e67100);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff8a1a', endColorstr='#ffe67100', GradientType=0);
+  border-color: #e67100 #e67100 #9a4b00;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  
+  *background-color: #e67100;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset -1px 1px 0 #ff9734;
+  -moz-box-shadow: inset -1px 1px 0 #ff9734;
+  box-shadow: inset -1px 1px 0 #ff9734;
+}
+#mailtoForm p .button:hover:hover,
+#mailtoForm p .button:hover:focus,
+#mailtoForm p .button:hover:active,
+#mailtoForm p .button:hover.active,
+#mailtoForm p .button:hover.disabled,
+#mailtoForm p .button:hover[disabled] {
+  color: #fff;
+  background-color: #e67100;
+  *background-color: #cd6400;
+}
+#mailtoForm p .button:hover:active,
+#mailtoForm p .button:hover.active {
+  background-color: #b35800 \9;
+}
+a.itemPrintThisPage {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+a.itemPrintThisPage:hover,
+a.itemPrintThisPage:focus,
+a.itemPrintThisPage:active {
+  border-color: #999;
+}

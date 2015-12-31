@@ -1,0 +1,1365 @@
+// ---------------------------------------------------------
+// GENERIC ARTICLE STYLES
+// ---------------------------------------------------------
+
+
+// Articles Layout
+// ---------------------------------------------------------
+.blog {
+}
+
+// Home Blog
+.blog-featured {
+}
+
+// Leading Article Rows
+.items-leading {
+}
+
+.items-leading .leading {
+  margin-bottom: @baseLineHeight*2;
+}
+
+// Article Rows
+.items-row {
+}
+
+.items-row .item {
+  margin-bottom: @baseLineHeight * 2;
+}
+
+// Divider
+.divider-vertical {
+  margin: 0 0 (@baseLineHeight * 2);
+  border: 0;
+  border-top: 1px solid @hrBorder;
+  border-bottom: 1px solid @white;
+}
+
+
+// Article Aside
+// -------------
+.article-aside {
+	color: @grayLight;
+	font-size: @T3smallFontSize;
+  margin-bottom: @baseLineHeight;
+}
+
+.article-info {
+  margin: 0;
+  width: 90%;
+}
+
+.article-info a {
+}
+
+.article-info a:hover,
+.article-info a:active,
+.article-info a:focus {
+}
+
+.article-info .article-info-term {
+  display: none;
+}
+
+.article-info dd {
+  background: url(../images/sep-grey.gif) no-repeat right center;
+  float: left;
+  margin-left: 0;
+  margin-right: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.article-info dd:last-child {
+  background: none;
+}
+
+.article-info dd span {
+	font-weight: bold;
+}
+
+.article-url {
+}
+
+.modifydate {
+}
+
+// Article Desciption
+.contentdescription {
+}
+
+.contentdescription p {
+}
+
+
+// Article Footer
+// --------------
+.article-footer {
+  color: @grayLight;
+  font-size: @T3smallFontSize;
+  margin-bottom: @baseLineHeight;
+}
+
+
+// Article Images
+// --------------
+article img {
+  .border-radius(3px);
+}
+
+article img[align=left],
+.img_caption.left {
+  margin: 0 @gridGutterWidth @baseLineHeight 0;
+}
+
+article img[align=right],
+.img_caption.right {
+  margin: 0 0 @baseLineHeight @gridGutterWidth;
+}
+
+.img-intro-none,
+.img-intro-left,
+.img-intro-right,
+.img-fulltext-none,
+.img-fulltext-left,
+.img-fulltext-right,
+.img_caption {
+  position: relative;
+}
+
+.img-intro-none,
+.img-intro-left,
+.img-intro-right,
+.img-fulltext-none,
+.img-fulltext-left,
+.img-fulltext-right,
+.img_caption {
+  margin-bottom: @baseLineHeight;
+  max-width: 100%;
+}
+
+.img-fulltext-left {
+  float: left;
+  margin-right: @gridGutterWidth;
+}
+
+.img-fulltext-right {
+  float: right;
+  margin-left: @gridGutterWidth;
+}
+
+.img-intro-none img,
+.img-intro-left img,
+.img-intro-right img,
+.img-fulltext-none img,
+.img-fulltext-left img,
+.img-fulltext-right img {
+  margin: 0;
+}
+
+// Image caption
+.img_caption img {
+  margin-bottom: 1px !important;
+}
+
+.img_caption p.img_caption {
+  background: @grayLighter;
+  color: @gray;
+  font-size: @T3smallerFontSize;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  .box-sizing(border-box);
+  clear: both;
+}
+
+
+// Article Actions
+// ---------------
+article aside .btn-group {
+}
+
+article aside .btn-group .dropdown-menu {
+}
+
+article aside .btn-group > .dropdown-toggle {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  .box-shadow(none);
+}
+
+
+
+// ---------------------------------------------------------
+// COMMON JOOMLA STYLE
+// ---------------------------------------------------------
+
+// Login
+// ---------------------------------------------------------
+.login h1 {
+}
+
+.login_form fieldset,
+.login fieldset {
+  padding: 15px 0 0;
+}
+
+.login_form fieldset p,
+.login fieldset p {
+  margin: 0 0 5px;
+}
+
+.login_form label,
+.login label {
+  display: block;
+  font-weight: bold;
+}
+
+.login-fields {
+  margin: 0 0 10px;
+}
+
+.login_form .inputbox,
+.login-fields .required {
+  margin-left: 10px;
+  width: 150px;
+}
+
+.login_form .remember .inputbox {
+  width: 20px;
+}
+
+.login_form .button,
+.login button {
+}
+
+// login-form
+#login-form {
+	.checkbox input[type="checkbox"] {
+		margin-top: 2px;
+	}
+}
+
+// Register
+// ---------------------------------------------------------
+.form-register fieldset {
+  padding: 0 0 10px;
+}
+
+.form-register p {
+  margin: 0 0 5px;
+}
+
+.form-register p.form-des {
+  margin: 15px 0;
+}
+
+.form-register label {
+  display: block;
+  float: left;
+  font-weight: bold;
+  text-align: right;
+  width: 130px;
+}
+
+.form-register .inputbox {
+  margin-left: 10px;
+  width: 200px;
+}
+
+.form-register .button {
+  margin-left: 140px;
+}
+
+.registration fieldset dt {
+  margin-right: 5px;
+}
+
+.admintable textarea {
+  max-width: 90% !important;
+  resize: none;
+}
+
+
+// Mail to
+// ---------------------------------------------------------
+#mailto-window {
+  background: #fff;
+  margin: 10px 0 20px;
+  padding: 0;
+  position: relative;
+}
+
+#mailto-window h2 {
+  font-size: 20px;
+	font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#mailto-window .mailto-close {
+  background: #FFF;
+  background: -moz-linear-gradient(bottom, #ccc, #f0f0f0);
+  background: -webkit-linear-gradient(bottom, #ccc, #f0f0f0);
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  color: #666;
+  font-size: 92%;
+  padding: 2px 5px;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  text-shadow: 1px 1px 0 #f0f0f0;
+}
+
+#mailto-window .mailto-close a {
+  color: #666;
+}
+
+#mailto-window .mailto-close:hover {
+  border-color: #999;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+#mailtoForm .formelm {
+  padding: 10px 0;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+#mailtoForm .formelm label {
+  display: block;
+  float: left;
+  font-weight: bold;
+  vertical-align: middle;
+  width: 100px;
+}
+
+#mailtoForm p {
+  margin-top: 10px;
+}
+
+#mailtoForm .inputbox {
+  margin-bottom: 0;
+  width: 60%;
+}
+
+#mailtoForm .button {
+  margin-right: 5px;
+}
+
+
+// User
+// ---------------------------------------------------------
+.user-details {
+  padding: 10px 0;
+}
+
+.user-details p {
+  margin: 0 0 5px;
+}
+
+.user-details label {
+  display: block;
+  float: left;
+  font-weight: bold;
+  text-align: right;
+  width: 130px;
+}
+
+.user-details .inputbox {
+  margin-left: 10px;
+  width: 200px;
+}
+
+.user-details .button {
+  margin-left: 140px;
+}
+
+.user-details .paramlist .paramlist_key {
+  padding: 0 0 5px;
+  width: 130px;
+}
+
+.user-details .paramlist .paramlist_value {
+  padding: 0 0 5px;
+}
+
+.user-details .user_name span {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+
+// Reset & Remind
+// --------------
+.reset h1,
+.remind h1 {
+}
+
+.reset .form-validate p,
+.remind .form-validate p {
+  background: @grayLighter;
+  border: 1px solid @T3borderColor;
+  margin-top: 5px;
+  margin-bottom: @baseLineHeight;
+  padding: (@baseLineHeight / 2) @baseLineHeight;
+}
+
+.reset .form-validate fieldset dl,
+.remind .form-validate fieldset dl {
+  margin: 0;
+}
+
+.reset .form-validate fieldset dt,
+.remind .form-validate fieldset dt {
+  margin: 4px 0 0 0;
+}
+
+
+// Profile
+//---------
+.profile h1,
+.profile-edit h1 {
+  font-size: 250%;
+  margin: 0 0 20px 0;
+}
+
+.profile fieldset,
+.profile-edit fieldset {
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 20px 20px 30px;
+  width: 100%;
+}
+
+.profile dl,
+.profile-edit dl {
+  margin: 0;
+}
+
+.profile dl dt,
+.profile-edit dl dt {
+  border-bottom: 1px solid #e5e5e5;
+  padding: (@baseLineHeight / 4) 10px;
+}
+
+.profile dl dd,
+.profile-edit dl dd {
+  border-bottom: 1px solid #e5e5e5;
+  padding: (@baseLineHeight / 4) 10px;  
+}
+
+.profile legend,
+.profile-edit legend {
+  background: @bodyBackground;
+  border: 0;
+  display: block;
+  margin-bottom: 0;
+  padding: 0 5px;
+  width: auto;
+}
+
+.profile ul.pull-right {
+  float: none;
+}
+
+.profile a,
+.profile-edit a {
+  display: inline-block;
+  padding: 2px 0 2px 20px;
+}
+
+.profile a.btn,
+.profile-edit a.btn {
+  padding: 5px;
+}
+
+
+// Search
+// ---------------------------------------------------------
+form#searchForm {
+  padding: 15px 0;
+}
+
+.searchintro {
+  padding: 10px;
+  width: 100%;
+}
+
+.searchintro p {
+  margin: 0;
+}
+
+.results h4 {
+  margin: 15px 0 0;
+}
+
+.results p {
+  margin: 0 0 10px;
+}
+
+.search fieldset {
+  border: 1px solid #F0F0F0;
+  margin: 25px 0 15px;
+  padding: 10px;
+}
+
+.search fieldset legend {
+  border: 0;
+  display: inline;
+  font-size: 100%;
+  margin: 0;
+  width: auto;
+}
+
+.search .phrases-box {
+  margin: 0 0 10px;
+}
+
+.search .phrases-box input,
+.search .phrases-box label {
+  display: inline-block;
+  margin: 3px 0 0;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.search .word button {
+  margin-left: 5px;
+}
+
+.search .word .inputbox {
+  vertical-align: top;
+}
+
+.search .word label {
+  vertical-align: middle;
+}
+
+.search .form-limit label {
+  display: inline-block;
+}
+
+/* Search results */
+dl.search-results dt.result-title {
+  font-size: 110%;
+}
+
+dl.search-results dt.result-title a {
+  color: #666;
+}
+
+dl.search-results dt.result-title a:hover,
+dl.search-results dt.result-title a:focus,
+dl.search-results dt.result-title a:active {
+  color: #09C;
+}
+
+dl.search-results dd {
+  display: block;
+  padding: 0 0 5px;
+}
+
+dl.search-results dd.result-created {
+  border-bottom: 1px solid #EEE;
+  color: #999;
+  font-size: 92%;
+  margin-bottom: 10px;
+}
+
+
+
+// Contact
+// ---------------------------------------------------------
+#component-contact address {
+  font-style: normal;
+}
+
+#component-contact #emailForm {
+}
+
+.contact_email {
+  margin: 0 0 10px;
+}
+
+.contact_email div {
+  padding: 5px 0;
+}
+
+.contact_email label {
+  display: block;
+  float: left;
+  font-weight: bold;
+  width: 17em;
+}
+
+.contact_email-copy {
+  margin: 15px 0;
+}
+
+.contact-email-copy label {
+  display: inline;
+}
+
+div.contact-links ul li {
+  background: none;
+}
+
+
+// Archive
+// ---------------------------------------------------------
+#archive-items > li {
+  line-height: normal;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+}
+
+#archive-items div.intro {
+  clear: both;
+  overflow: hidden;
+}
+
+
+// Category List
+// ---------------------------------------------------------
+.categories-list {
+}
+
+.categories-list h1 {
+}
+
+.categories-list .category-desc {
+  overflow: hidden;
+}
+
+.categories-list > .category-desc {
+  background: @grayLighter;
+  margin-bottom: @baseLineHeight;
+  padding: @baseLineHeight;
+  text-shadow: 1px 1px 0 @white;
+  .border-radius(3px);
+}
+
+.categories-list div.category-item {
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: @baseLineHeight;
+  padding-bottom: @baseLineHeight;
+}
+
+.categories-list div img {
+  margin-right: 20px;
+  .border-radius(3px);
+	
+	&[align=left] {
+		margin: 0 @baseLineHeight @baseLineHeight 0;
+	}
+	
+	&[align=right] {
+		margin: 0 @baseLineHeight 0 @baseLineHeight;
+	}
+} 
+
+.categories-list div h3.page-header {
+  border-bottom: 0;
+  font-family: @fontFaceBold;
+  font-weight: normal;
+  margin: 20px 0 (@baseLineHeight / 2);
+  padding: 0;
+}
+
+.categories-list div h3.page-header a {
+  color: @gray;
+}
+
+.categories-list div h3.page-header a:hover,
+.categories-list div h3.page-header a:focus,
+.categories-list div h3.page-header a:active {
+  color: @linkColorHover;
+}
+
+.categories-list ul {
+}
+
+.categories-list ul li {
+}
+
+.categories-list .item-title {
+
+}
+
+.categories-list .item-title a {
+}
+
+.categories-list dl {
+  margin: 0 0 0 5px;
+  display: inline-block;
+  color: #999;
+  font-size: 92%;
+}
+
+.categories-list dl dt,
+.categories-list dl dd {
+  display: inline;
+}
+
+.categories-list ul li ul {
+  margin-left: 25px;
+}
+
+.categories-list ul li li {
+}
+
+.categories-list ul li li li {
+}
+
+.categories-list ul li li.last {
+  border-bottom: 0;
+}
+
+
+// Sub Category List
+// -----------------
+.cat-children {
+}
+
+.cat-children div {
+  .clearfix();
+}
+
+.cat-children h3.page-header {
+  border-top: 1px solid #ddd;
+  border-bottom: 0;
+  margin: 40px 0 0 0;
+  padding: 10px 0;
+}
+
+.cat-children .category-desc img {
+  .border-radius(3px);
+}
+
+.cat-children .category-desc img[align=left] {
+  margin: 0 20px 0 0;
+}
+
+.cat-children .category-desc img[align=right] {
+  margin: 0 0 0 20px;
+}
+
+.cat-children ul {
+}
+
+.cat-children ul li {
+}
+
+.cat-children ul li span.jitem-title {
+}
+
+.cat-children ul li span.jitem-title a {
+}
+
+
+// Poll
+// ---------------------------------------------------------
+div.poll {
+  padding: 15px 0;
+}
+
+form#poll {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+dl.poll {
+  font-size: 92%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+dl.poll dt, dl.poll dd {
+  float: left;
+}
+
+dl.poll dt {
+  clear: left;
+  width: 100px;
+}
+
+dl.poll dd {
+  clear: right;
+  width: 400px;
+}
+
+.pollstableborder {
+  border: none;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.pollstableborder img {
+  vertical-align: baseline;
+}
+
+.pollstableborder td {
+}
+
+.pollstableborder tr.sectiontableentry0 td,
+.pollstableborder tr.sectiontableentry1 td {
+}
+
+
+// Edit Content
+// ---------------------------------------------------------
+.edit fieldset {
+  border: 0;
+  border-top: 3px solid #ccc;
+  margin: 25px 0 15px;
+  padding: 10px;
+}
+
+.edit fieldset legend {
+  padding: 0 10px;
+  font-size: 150%;
+  line-height: 1;
+}
+
+.edit .formelm {
+  margin: 0 0 10px;
+  overflow: hidden;
+}
+
+.edit .formelm .fltlft {
+}
+
+.edit .formelm input[type=text] {
+  min-width: 60%;
+}
+
+.edit .formelm-buttons,
+.edit .formelm-area {
+  margin: 0 0 10px;
+}
+
+.edit .formelm label,
+.edit .formelm-area label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-edit fieldset dt {
+  min-width: 17em;
+}
+
+.edit.item-page .tab-content {
+	overflow: visible;
+}
+
+.edit.item-page .form-actions {
+	clear: both;
+}
+
+// Editor Buttons
+// --------------
+#editor-xtd-buttons {
+}
+
+.button2-left,
+.button2-left div {
+  float: left;
+}
+
+.button2-right,
+.button2-right div {
+  float: right;
+}
+
+.button2-left {
+  margin: 5px 5px 0 0;
+}
+
+.button2-right {
+  margin: 5px 0 0 5px;
+}
+
+.button2-left a,
+.button2-right a,
+.button2-left span,
+.button2-right span {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #999;
+  cursor: pointer;
+  display: block;
+  float: left;
+  padding: 2px 10px;
+  border-radius: 3px;
+}
+
+.button2-left span,
+.button2-right span {
+  color: #aaa;
+  cursor: default;
+}
+
+.button2-left .page a,
+.button2-right .page a,
+.button2-left .page span,
+.button2-right .page span {
+  padding: 0 6px;
+}
+
+.button2-left a:hover,
+.button2-right a:hover {
+  background: #ccc;
+  color: #333;
+  text-decoration: none;
+}
+
+.button2-left .image {
+}
+
+.button2-left .readmore {
+}
+
+.button2-left .pagebreak {
+}
+
+
+// Calendar Button
+// ---------------
+.formelm img.calendar {
+  cursor: pointer;
+  height: 16px;
+  margin-left: 3px;
+  vertical-align: middle;
+  width: 16px;
+}
+
+// Web link
+// ---------------
+div.weblink-category table.category td > p {
+  padding-right: 30px;
+}
+
+div.weblink-category table.category ul.actions {
+  float: right;
+  margin: -30px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.weblink-category {
+
+  .filters {
+    margin-bottom: @baseLineHeight;
+  }
+
+  .category {
+		margin: 0;
+		list-style: none;
+		
+		li {
+			padding: 20px 10px;
+			border-top: 1px solid @grayLighter;
+			
+			> p {
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+
+
+// ---------------------------------------------------------
+// CONTENT NAVIGATIONS
+// ---------------------------------------------------------
+
+//  Pagebreak Nav
+// --------------
+.article-content .pagination ul {
+  border-left: 1px solid @T3borderColor;
+}
+
+.article-content .pagination ul li {
+  float: left;
+  padding: (@baseLineHeight / 2) @baseLineHeight;
+  line-height: normal;
+  border: 1px solid @T3borderColor;
+  border-left: 0;
+}
+
+.article-content .pagination ul li:hover {
+}
+
+.article-content .pagination ul a {
+  border: 0;
+  text-decoration: none;
+  background-color: transparent;
+  line-height: normal;
+  padding: 0;
+}
+
+.article-content .pagination ul a:hover,
+.article-content .pagination ul a:active,
+.article-content .pagination ul a:focus {
+}
+
+.pagenavcounter {
+  margin: 0 0 @baseLineHeight;
+  font-weight: bold;
+}
+
+
+// PageBreak Index
+// ---------------
+#article-index {
+  float: right;
+  margin: 0 0 @baseLineHeight @baseLineHeight;
+  padding: 10px;
+  width: 30%;
+  border: 1px solid @T3borderColor;
+  .border-radius (@inputBorderRadius);
+}
+
+#article-index ul {
+  margin: 0 0 0 20px;
+}
+
+
+// Articles Navigation
+// -------------------
+.pagenav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagenav li {
+  margin: 0 10px 0 0;
+  padding: 0;
+  float: left;
+}
+
+.pagenav li.pagenav-prev {
+  margin-right: 10px;
+}
+
+.pagenav li.pagenav-next {
+}
+
+.pagenav li a {
+  padding: (@baseLineHeight / 4) (@baseLineHeight / 2);
+  line-height: normal;
+  border: 1px solid @T3borderColor;
+  .border-radius (@inputBorderRadius);
+}
+
+.pagenav li a:hover {
+  background-color: lighten(@navbarLinkBackgroundHover, 15%);
+  border: 1px solid @navbarLinkColorHover;
+  color: @navbarLinkColorHover;
+  text-decoration: none;
+}
+
+// Pagination
+// ----------
+.pagination {
+	ul {
+		.box-shadow(none);
+	}
+	.pagination-list {
+		> li {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		
+		> li > a,
+		> li:first-child > a,
+		> li:last-child > a {
+			background: @gray;
+			border: 0;
+			color: @white;
+			margin: 0 (@baseLineHeight / 5);
+			padding: 5px 10px;
+			.border-radius(@inputBorderRadius);
+			.transition(0.5s);
+		}
+
+		> li > a:hover,
+		> li.active > a {
+			background: @linkColorHover;
+			text-decoration: none;
+		}
+
+		> li.disabled > a {
+			background: @grayLighter;
+			color: @gray;
+		}
+	}
+	//end
+}
+
+.counter {
+  float: right;
+  line-height: 1;
+  margin: (@baseLineHeight / 2) 0;
+  text-align: right;
+}
+
+
+// Items More
+// -----------
+.items-more {
+}
+
+.items-more h3 {
+  margin: 0 0 5px;
+}
+
+.items-more ol {
+}
+
+
+// Back Buttons
+// -----------
+.back_button a,
+.back_button a:hover,
+.back_button a:active {
+  display: block;
+  margin: 10px 0;
+}
+
+
+// Form Control
+// ------------
+fieldset.filters {
+  margin: (@baseLineHeight / 2) 0 5px;
+}
+
+.display-limit {
+  margin: (@baseLineHeight / 2) 0 5px;
+}
+
+fieldset.filters .filter-search,
+fieldset.filters .display-limit {
+  float: left;
+  width: 100%;
+}
+
+fieldset.filters .display-limit {
+  float: right;
+  text-align: right;
+}
+
+
+
+// ---------------------------------------------------------
+// MESSAGES & NOTIFICATIONS
+// ---------------------------------------------------------
+
+// Messages
+// ---------------------------------------------------------
+#system-message {
+}
+
+#system-message dt {
+  font-weight: bold;
+}
+
+#system-message dd {
+  font-weight: bold;
+}
+
+
+#system-message dd.message ul,
+#system-message dd.error ul,
+#system-message dd.notice ul {
+  margin: 0;
+  padding: 0;
+}
+
+#system-message dd.message ul li,
+#system-message dd.error ul li,
+#system-message dd.notice ul li {
+  background: none;
+  margin: 0;
+  padding: 5px;
+}
+
+// System Standard Messages
+#system-message dd.message ul {
+}
+
+// System Error Messages
+.error {
+}
+
+.error h2 {
+}
+
+#system-message dd.error ul {
+}
+
+// System Notice Messages
+#system-message dd.notice ul {
+}
+
+
+// Tooltips
+// ---------------------------------------------------------
+.tip-wrap {
+  background: #fff6df;
+  border: 1px solid #fb3;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,.4);
+  max-width: 300px;
+  z-index: 999;
+}
+
+.tip-title {
+  border-bottom: 1px solid #fb3;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.tip-text {
+  font-size: 100%;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.hasTip img {
+  border: none;
+  margin: 0 5px 0 0;
+}
+
+.edit .tab-content #images .modal {
+  box-shadow: none;
+  left: auto;
+  margin-left: 0;
+  position: inherit;
+  top: auto;
+  width: auto;
+}
+
+/* Tags Page ----*/
+.blog .tags {
+  background: @white;
+  border-bottom: solid 1px #e5e5e5;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.tags span {
+  margin-bottom: 3px;
+}
+
+.tags .label-info[href] {
+  background: @baseColor;
+  font-weight: normal;
+  font-size: @T3smallFontSize;
+  text-shadow: none;
+}
+
+.tags .label-info[href]:hover,
+.tags .label-info[href]:focus,
+.tags .label-info[href]:active {
+  background: darken(@baseColor, 5%);
+}
+
+.item-page .tags {
+  margin-bottom: 15px;
+}
+
+.tag-category {
+  background: @white;
+  padding: 20px;
+}
+
+.tag-category h2 {
+  line-height: normal;
+  margin-top: 0;
+}
+
+.tag-category ul.category {
+  margin: 10px 0 0;
+}
+
+.tag-category ul.category li {
+  list-style: none;
+  padding: 10px 20px;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.tag-category ul.category li h3 {
+  line-height: normal;
+}
+
+.tag-category ul li.pagination-list{
+  border-bottom: none;
+  padding: 0s;
+}
+
+.tag-category ul li img {
+  margin-bottom: 10px;
+}
+
+.tag-category ul li img[align="left"],
+.tag-category ul li img[align="right"] {
+  display: block;
+  float: none;
+}
+
+/*---------- templates-form ----*/
+#templates-form {
+	
+	a.modal{
+		box-shadow: none;
+		position: inherit;
+		width: auto !important; 
+		margin-left: 0 !important; 
+		top: auto !important;
+	}
+}
+
+/*--------- print ----*/
+
+.component .t3-mainbody {
+	padding-top: 20px;
+}
+
+/*--------- recaptcha ----*/
+#dynamic_recaptcha_1 {
+	max-width: 238px;
+}
+
+.mod-preview-info {
+	z-index: 10;
+}
+
+.newsfeed-category {
+  form {
+  }
+	
+	.category {
+		li {
+			padding: 20px 10px;
+			border-top: 1px solid @grayLighter;
+			
+			> p {
+				margin-top: 5px;
+			}
+		}
+	}
+}

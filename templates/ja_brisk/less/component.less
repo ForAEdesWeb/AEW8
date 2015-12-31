@@ -1,0 +1,48 @@
+@import "vars.less"; // Modify this for custom colors, font-sizes, etc
+
+body {
+  border: 0;
+}
+
+#ja-mainbody {
+  margin: 0;
+  padding: 10px 0;
+}
+
+#ja-mainbody .ja-content {
+  padding: 20px;
+}
+
+#ja-mainbody #mailtoForm .inputbox {
+  width: 50%;
+}
+
+#mailtoForm p .button {
+  border: 1px solid darken(@grayLight, 20%);
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 10px;
+  vertical-align: middle;
+  .buttonBackground(lighten(@grayLight, 10%), @grayLight, #fff, 1px 1px 0 darken(@grayLight, 10%));
+  .border-radius(3px);
+  .box-shadow(inset -1px 1px 0 lighten(@grayLight, 15%));
+}
+
+#mailtoForm p .button:hover {
+  border: 1px solid darken(@baseColor, 20%);
+  .buttonBackground(lighten(@baseColor, 10%), @baseColor, #fff, 1px 1px 0 darken(@baseColor, 10%));
+  .border-radius(3px);
+  .box-shadow(inset -1px 1px 0 lighten(@baseColor, 15%));
+}
+
+// Print button
+//-------------
+a.itemPrintThisPage {
+  .border-radius(3px);
+}
+
+a.itemPrintThisPage:hover,
+a.itemPrintThisPage:focus,
+a.itemPrintThisPage:active {
+  border-color: @grayLight;
+}
